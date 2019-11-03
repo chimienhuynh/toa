@@ -1,0 +1,10 @@
+{
+	"function": {},
+	"auth": {
+		"toa84735742": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}

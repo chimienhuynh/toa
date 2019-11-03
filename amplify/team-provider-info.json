@@ -1,0 +1,19 @@
+{
+    "toaenv": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-toa-toaenv-152831-authRole",
+            "UnauthRoleArn": "arn:aws:iam::223886604324:role/amplify-toa-toaenv-152831-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::223886604324:role/amplify-toa-toaenv-152831-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplify-toa-toaenv-152831-deployment",
+            "UnauthRoleName": "amplify-toa-toaenv-152831-unauthRole",
+            "StackName": "amplify-toa-toaenv-152831",
+            "StackId": "arn:aws:cloudformation:us-east-2:223886604324:stack/amplify-toa-toaenv-152831/7f8df090-fe78-11e9-b8b4-06c94a3c6390"
+        },
+        "categories": {
+            "auth": {
+                "toa84735742": {}
+            }
+        }
+    }
+}
