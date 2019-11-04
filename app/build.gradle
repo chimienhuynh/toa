@@ -43,4 +43,5 @@ dependencies {
     //For the drop-in UI:
     implementation 'com.amazonaws:aws-android-sdk-auth-userpools:2.15.+'
     implementation 'com.amazonaws:aws-android-sdk-auth-ui:2.15.+'
+    implementation files('app/libs/aws-android-sdk-2.16.2.zip')
 }

@@ -1,0 +1,286 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateAccount($input: CreateAccountInput!) {
+  createAccount(input: $input) {
+    id
+    email
+    username
+    password
+    profile {
+      id
+      firstName
+      lastName
+      description
+      dateOfBirth
+      city
+      province
+      country
+      type
+      updatedAt
+    }
+    posts {
+      nextToken
+    }
+    comments {
+      nextToken
+    }
+    createdAt
+  }
+}
+mutation UpdateAccount($input: UpdateAccountInput!) {
+  updateAccount(input: $input) {
+    id
+    email
+    username
+    password
+    profile {
+      id
+      firstName
+      lastName
+      description
+      dateOfBirth
+      city
+      province
+      country
+      type
+      updatedAt
+    }
+    posts {
+      nextToken
+    }
+    comments {
+      nextToken
+    }
+    createdAt
+  }
+}
+mutation DeleteAccount($input: DeleteAccountInput!) {
+  deleteAccount(input: $input) {
+    id
+    email
+    username
+    password
+    profile {
+      id
+      firstName
+      lastName
+      description
+      dateOfBirth
+      city
+      province
+      country
+      type
+      updatedAt
+    }
+    posts {
+      nextToken
+    }
+    comments {
+      nextToken
+    }
+    createdAt
+  }
+}
+mutation CreateProfile($input: CreateProfileInput!) {
+  createProfile(input: $input) {
+    id
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    firstName
+    lastName
+    description
+    dateOfBirth
+    city
+    province
+    country
+    type
+    updatedAt
+    profilePicture {
+      ...S3Object
+    }
+  }
+}
+mutation UpdateProfile($input: UpdateProfileInput!) {
+  updateProfile(input: $input) {
+    id
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    firstName
+    lastName
+    description
+    dateOfBirth
+    city
+    province
+    country
+    type
+    updatedAt
+    profilePicture {
+      ...S3Object
+    }
+  }
+}
+mutation DeleteProfile($input: DeleteProfileInput!) {
+  deleteProfile(input: $input) {
+    id
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    firstName
+    lastName
+    description
+    dateOfBirth
+    city
+    province
+    country
+    type
+    updatedAt
+    profilePicture {
+      ...S3Object
+    }
+  }
+}
+mutation CreatePost($input: CreatePostInput!) {
+  createPost(input: $input) {
+    id
+    title
+    createdAt
+    updatedAt
+    content
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    comments {
+      nextToken
+    }
+    postImage {
+      ...S3Object
+    }
+  }
+}
+mutation UpdatePost($input: UpdatePostInput!) {
+  updatePost(input: $input) {
+    id
+    title
+    createdAt
+    updatedAt
+    content
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    comments {
+      nextToken
+    }
+    postImage {
+      ...S3Object
+    }
+  }
+}
+mutation DeletePost($input: DeletePostInput!) {
+  deletePost(input: $input) {
+    id
+    title
+    createdAt
+    updatedAt
+    content
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    comments {
+      nextToken
+    }
+    postImage {
+      ...S3Object
+    }
+  }
+}
+mutation CreateComment($input: CreateCommentInput!) {
+  createComment(input: $input) {
+    id
+    createdAt
+    updatedAt
+    content
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    post {
+      id
+      title
+      createdAt
+      updatedAt
+      content
+    }
+  }
+}
+mutation UpdateComment($input: UpdateCommentInput!) {
+  updateComment(input: $input) {
+    id
+    createdAt
+    updatedAt
+    content
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    post {
+      id
+      title
+      createdAt
+      updatedAt
+      content
+    }
+  }
+}
+mutation DeleteComment($input: DeleteCommentInput!) {
+  deleteComment(input: $input) {
+    id
+    createdAt
+    updatedAt
+    content
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    post {
+      id
+      title
+      createdAt
+      updatedAt
+      content
+    }
+  }
+}

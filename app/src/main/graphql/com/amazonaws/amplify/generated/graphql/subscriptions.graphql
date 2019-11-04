@@ -1,0 +1,286 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateAccount {
+  onCreateAccount {
+    id
+    email
+    username
+    password
+    profile {
+      id
+      firstName
+      lastName
+      description
+      dateOfBirth
+      city
+      province
+      country
+      type
+      updatedAt
+    }
+    posts {
+      nextToken
+    }
+    comments {
+      nextToken
+    }
+    createdAt
+  }
+}
+subscription OnUpdateAccount {
+  onUpdateAccount {
+    id
+    email
+    username
+    password
+    profile {
+      id
+      firstName
+      lastName
+      description
+      dateOfBirth
+      city
+      province
+      country
+      type
+      updatedAt
+    }
+    posts {
+      nextToken
+    }
+    comments {
+      nextToken
+    }
+    createdAt
+  }
+}
+subscription OnDeleteAccount {
+  onDeleteAccount {
+    id
+    email
+    username
+    password
+    profile {
+      id
+      firstName
+      lastName
+      description
+      dateOfBirth
+      city
+      province
+      country
+      type
+      updatedAt
+    }
+    posts {
+      nextToken
+    }
+    comments {
+      nextToken
+    }
+    createdAt
+  }
+}
+subscription OnCreateProfile {
+  onCreateProfile {
+    id
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    firstName
+    lastName
+    description
+    dateOfBirth
+    city
+    province
+    country
+    type
+    updatedAt
+    profilePicture {
+      ...S3Object
+    }
+  }
+}
+subscription OnUpdateProfile {
+  onUpdateProfile {
+    id
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    firstName
+    lastName
+    description
+    dateOfBirth
+    city
+    province
+    country
+    type
+    updatedAt
+    profilePicture {
+      ...S3Object
+    }
+  }
+}
+subscription OnDeleteProfile {
+  onDeleteProfile {
+    id
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    firstName
+    lastName
+    description
+    dateOfBirth
+    city
+    province
+    country
+    type
+    updatedAt
+    profilePicture {
+      ...S3Object
+    }
+  }
+}
+subscription OnCreatePost {
+  onCreatePost {
+    id
+    title
+    createdAt
+    updatedAt
+    content
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    comments {
+      nextToken
+    }
+    postImage {
+      ...S3Object
+    }
+  }
+}
+subscription OnUpdatePost {
+  onUpdatePost {
+    id
+    title
+    createdAt
+    updatedAt
+    content
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    comments {
+      nextToken
+    }
+    postImage {
+      ...S3Object
+    }
+  }
+}
+subscription OnDeletePost {
+  onDeletePost {
+    id
+    title
+    createdAt
+    updatedAt
+    content
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    comments {
+      nextToken
+    }
+    postImage {
+      ...S3Object
+    }
+  }
+}
+subscription OnCreateComment {
+  onCreateComment {
+    id
+    createdAt
+    updatedAt
+    content
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    post {
+      id
+      title
+      createdAt
+      updatedAt
+      content
+    }
+  }
+}
+subscription OnUpdateComment {
+  onUpdateComment {
+    id
+    createdAt
+    updatedAt
+    content
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    post {
+      id
+      title
+      createdAt
+      updatedAt
+      content
+    }
+  }
+}
+subscription OnDeleteComment {
+  onDeleteComment {
+    id
+    createdAt
+    updatedAt
+    content
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    post {
+      id
+      title
+      createdAt
+      updatedAt
+      content
+    }
+  }
+}

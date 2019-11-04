@@ -1,0 +1,164 @@
+# this is an auto generated file. This will be overwritten
+query GetAccount($id: ID!) {
+  getAccount(id: $id) {
+    id
+    email
+    username
+    password
+    profile {
+      id
+      firstName
+      lastName
+      description
+      dateOfBirth
+      city
+      province
+      country
+      type
+      updatedAt
+    }
+    posts {
+      nextToken
+    }
+    comments {
+      nextToken
+    }
+    createdAt
+  }
+}
+query ListAccounts(
+  $filter: ModelAccountFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listAccounts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    nextToken
+  }
+}
+query GetProfile($id: ID!) {
+  getProfile(id: $id) {
+    id
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    firstName
+    lastName
+    description
+    dateOfBirth
+    city
+    province
+    country
+    type
+    updatedAt
+    profilePicture {
+      ...S3Object
+    }
+  }
+}
+query ListProfiles(
+  $filter: ModelProfileFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listProfiles(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      firstName
+      lastName
+      description
+      dateOfBirth
+      city
+      province
+      country
+      type
+      updatedAt
+    }
+    nextToken
+  }
+}
+query GetPost($id: ID!) {
+  getPost(id: $id) {
+    id
+    title
+    createdAt
+    updatedAt
+    content
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    comments {
+      nextToken
+    }
+    postImage {
+      ...S3Object
+    }
+  }
+}
+query ListPosts(
+  $filter: ModelPostFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listPosts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      title
+      createdAt
+      updatedAt
+      content
+    }
+    nextToken
+  }
+}
+query GetComment($id: ID!) {
+  getComment(id: $id) {
+    id
+    createdAt
+    updatedAt
+    content
+    account {
+      id
+      email
+      username
+      password
+      createdAt
+    }
+    post {
+      id
+      title
+      createdAt
+      updatedAt
+      content
+    }
+  }
+}
+query ListComments(
+  $filter: ModelCommentFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listComments(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    items {
+      id
+      createdAt
+      updatedAt
+      content
+    }
+    nextToken
+  }
+}

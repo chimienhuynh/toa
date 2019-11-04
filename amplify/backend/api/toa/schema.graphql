@@ -1,0 +1,53 @@
+type Account @model {
+    id: ID!
+    email: String!
+    username: String!
+    password: String!
+    profile: Profile @connection(name: "AccountProfile")
+    posts: [Post] @connection(name: "AccountPosts")
+    comments: [Comment] @connection(name: "AccountComments")
+    createdAt: String
+}
+
+type Profile @model {
+    id: ID!
+    account: Account @connection(name: "AccountProfile")
+    firstName: String
+    lastName: String
+    description: String
+    dateOfBirth: String
+    city: String
+    province: String
+    country: String
+    type: String
+    updatedAt: String
+    profilePicture: S3Object
+}
+
+type Post @model {
+    id: ID!
+    title: String
+    createdAt: String
+    updatedAt: String
+    content: String
+    account: Account @connection(name: "AccountPosts")
+    comments: [Comment] @connection(name: "PostComments")
+    postImage: S3Object
+}
+
+type Comment @model {
+    id: ID!
+    createdAt: String
+    updatedAt: String
+    content: String
+    account: Account @connection(name: "AccountComments")
+    post: Post @connection(name: "PostComments")
+}
+
+type S3Object {
+  bucket: String!
+  region: String!
+  key: String!
+  mimeType: String!
+  localUri: String!
+}

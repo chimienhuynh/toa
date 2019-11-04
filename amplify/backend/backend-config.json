@@ -1,10 +1,22 @@
 {
 	"function": {},
-	"auth": {
-		"toa84735742": {
-			"service": "Cognito",
+	"auth": {},
+	"api": {
+		"toa": {
+			"service": "AppSync",
 			"providerPlugin": "awscloudformation",
-			"dependsOn": []
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "API_KEY",
+						"apiKeyConfig": {
+							"description": "toaApi",
+							"apiKeyExpirationDays": "365"
+						}
+					}
+				}
+			}
 		}
 	}
 }
