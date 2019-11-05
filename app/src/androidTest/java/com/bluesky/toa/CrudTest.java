@@ -11,7 +11,7 @@ import com.amazonaws.mobileconnectors.appsync.fetcher.AppSyncResponseFetchers;
 import com.apollographql.apollo.GraphQLCall;
 import com.apollographql.apollo.api.Response;
 import com.apollographql.apollo.exception.ApolloException;
-import com.bluesky.toa.data.AWSClientFactory;
+import com.bluesky.toa.data.utils.AWSClientFactory;
 
 import junit.framework.TestCase;
 

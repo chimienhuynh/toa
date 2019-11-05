@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import com.amazonaws.mobileconnectors.appsync.AWSAppSyncClient;
 import com.bluesky.toa.R;
-import com.bluesky.toa.data.AWSClientFactory;
+import com.bluesky.toa.data.utils.AWSClientFactory;
 
 import androidx.appcompat.app.AppCompatActivity;
 

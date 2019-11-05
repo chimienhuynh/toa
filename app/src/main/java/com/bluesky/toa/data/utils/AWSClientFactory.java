@@ -1,4 +1,4 @@
-package com.bluesky.toa.data;
+package com.bluesky.toa.data.utils;
 
 import android.content.Context;
 
