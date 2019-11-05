@@ -1,3 +1,65 @@
 <resources>
-    <string name="app_name">TOA</string>
+    <string name="organiztion_name">The Organizing Academy</string>
+    <string name="app_name">TheOrgApp</string>
+
+    <string name="Organizing">Organizing and Productivity Solution</string>
+    <string name="LogInButton">Login</string>
+    <string name="Or">Or</string>
+    <string name="SignUpButton">Sign up</string>
+
+    <string name="LoginText">Email</string>
+    <string name="email">Email</string>
+    <string name="PasswordText">password</string>
+    <string name="password">Password</string>
+    <string name="LoginButton1">login</string>
+
+    <string name="name">Name</string>
+    <string name="confirmpassword">Confirm Password</string>
+    <string name="already_registered">Already registered?</string>
+    <string name="login_again">Login</string>
+
+    <string name="registered_as">Register as: </string>
+    <string name="professional_register">Professional </string>
+    <string name="customer_register">Customer </string>
+    <string name="register_button">Register</string>
+
+    <string name="version_info">Version: October, 2019</string>
+    <string name="home_page_title">TheOrgApp</string>
+    <string name="group_message">BlueSky - Algonquin College</string>
+    <string name="course_message">Advisor Professor: Reginald Dyer</string>
+    <string name="home_main_name_jj">Home</string>
+    <string name="connect_main_name_jj">Connect</string>
+    <string name="features_main_name_jj">Features</string>
+    <string name="profile_main_name_jj">Profile</string>
+    <string name="button1_hp_jj_name">Manage Projects</string>
+    <string name="button2_hp_jj_name">Master Your Craft</string>
+    <string name="button3_hp_jj_name">Submit An Article</string>
+    <string name="button4_hp_jj_name">Share Your Insights</string>
+    <string name="button5_hp_jj_name">Showcase Your Service</string>
+    <string name="button6_hp_jj_name">Contact Support</string>
+    <string name="heip_menu_item_name">Help</string>
+    <string name="about_menu_item_name">About</string>
+    <string name="log_out_menu_item_name">Log Out</string>
+    <string name="log_out_msg">Are you sure to Log Out</string>
+    <string name="positive_ok">Ok</string>
+
+    <string name="home_page_help_title">Home Page Help</string>
+    <string name="home_page_help_message">Help message for usage: Home Page</string>
+
+    <string name="connect_help_title">Connect Help</string>
+    <string name="connect_help_message">Help message for usage: Connect</string>
+
+    <string name="features_help_title">Features Help</string>
+    <string name="features_help_message">Help message for usage: Features</string>
+
+    <string name="profile_help_title">Profile Help</string>
+    <string name="profile_help_message">Help message for usage: Profile</string>
+    <string name="profile_photo_description">Profile Photo</string>
+    <string name="profile_first_name">Jesmine</string>
+    <string name="profile_last_name">Onyeukwu</string>
+    <string name="profile_organizing_type">Orginizing Guru</string>
+    <string name="profile_city">Ottawa</string>
+    <string name="profile_province">Ontario</string>
+    <string name="profile_country">Canada</string>
+
 </resources>
