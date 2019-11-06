@@ -678,6 +678,18 @@
                         },
                         "isDeprecated": false,
                         "deprecationReason": null
+                    },
+                    {
+                        "name": "owner",
+                        "description": null,
+                        "args": [],
+                        "type": {
+                            "kind": "SCALAR",
+                            "name": "String",
+                            "ofType": null
+                        },
+                        "isDeprecated": false,
+                        "deprecationReason": null
                     }
                 ],
                 "inputFields": null,
@@ -1322,6 +1334,18 @@
                         },
                         "isDeprecated": false,
                         "deprecationReason": null
+                    },
+                    {
+                        "name": "owner",
+                        "description": null,
+                        "args": [],
+                        "type": {
+                            "kind": "SCALAR",
+                            "name": "String",
+                            "ofType": null
+                        },
+                        "isDeprecated": false,
+                        "deprecationReason": null
                     }
                 ],
                 "inputFields": null,
@@ -1533,6 +1557,18 @@
                         "type": {
                             "kind": "OBJECT",
                             "name": "Post",
+                            "ofType": null
+                        },
+                        "isDeprecated": false,
+                        "deprecationReason": null
+                    },
+                    {
+                        "name": "owner",
+                        "description": null,
+                        "args": [],
+                        "type": {
+                            "kind": "SCALAR",
+                            "name": "String",
                             "ofType": null
                         },
                         "isDeprecated": false,
@@ -3114,7 +3150,22 @@
                     {
                         "name": "onCreateAccount",
                         "description": null,
-                        "args": [],
+                        "args": [
+                            {
+                                "name": "id",
+                                "description": null,
+                                "type": {
+                                    "kind": "NON_NULL",
+                                    "name": null,
+                                    "ofType": {
+                                        "kind": "SCALAR",
+                                        "name": "String",
+                                        "ofType": null
+                                    }
+                                },
+                                "defaultValue": null
+                            }
+                        ],
                         "type": {
                             "kind": "OBJECT",
                             "name": "Account",
@@ -3126,7 +3177,22 @@
                     {
                         "name": "onUpdateAccount",
                         "description": null,
-                        "args": [],
+                        "args": [
+                            {
+                                "name": "id",
+                                "description": null,
+                                "type": {
+                                    "kind": "NON_NULL",
+                                    "name": null,
+                                    "ofType": {
+                                        "kind": "SCALAR",
+                                        "name": "String",
+                                        "ofType": null
+                                    }
+                                },
+                                "defaultValue": null
+                            }
+                        ],
                         "type": {
                             "kind": "OBJECT",
                             "name": "Account",
@@ -3138,7 +3204,22 @@
                     {
                         "name": "onDeleteAccount",
                         "description": null,
-                        "args": [],
+                        "args": [
+                            {
+                                "name": "id",
+                                "description": null,
+                                "type": {
+                                    "kind": "NON_NULL",
+                                    "name": null,
+                                    "ofType": {
+                                        "kind": "SCALAR",
+                                        "name": "String",
+                                        "ofType": null
+                                    }
+                                },
+                                "defaultValue": null
+                            }
+                        ],
                         "type": {
                             "kind": "OBJECT",
                             "name": "Account",
@@ -3150,7 +3231,22 @@
                     {
                         "name": "onCreateProfile",
                         "description": null,
-                        "args": [],
+                        "args": [
+                            {
+                                "name": "owner",
+                                "description": null,
+                                "type": {
+                                    "kind": "NON_NULL",
+                                    "name": null,
+                                    "ofType": {
+                                        "kind": "SCALAR",
+                                        "name": "String",
+                                        "ofType": null
+                                    }
+                                },
+                                "defaultValue": null
+                            }
+                        ],
                         "type": {
                             "kind": "OBJECT",
                             "name": "Profile",
@@ -3162,7 +3258,22 @@
                     {
                         "name": "onUpdateProfile",
                         "description": null,
-                        "args": [],
+                        "args": [
+                            {
+                                "name": "owner",
+                                "description": null,
+                                "type": {
+                                    "kind": "NON_NULL",
+                                    "name": null,
+                                    "ofType": {
+                                        "kind": "SCALAR",
+                                        "name": "String",
+                                        "ofType": null
+                                    }
+                                },
+                                "defaultValue": null
+                            }
+                        ],
                         "type": {
                             "kind": "OBJECT",
                             "name": "Profile",
@@ -3174,7 +3285,22 @@
                     {
                         "name": "onDeleteProfile",
                         "description": null,
-                        "args": [],
+                        "args": [
+                            {
+                                "name": "owner",
+                                "description": null,
+                                "type": {
+                                    "kind": "NON_NULL",
+                                    "name": null,
+                                    "ofType": {
+                                        "kind": "SCALAR",
+                                        "name": "String",
+                                        "ofType": null
+                                    }
+                                },
+                                "defaultValue": null
+                            }
+                        ],
                         "type": {
                             "kind": "OBJECT",
                             "name": "Profile",
@@ -3186,7 +3312,22 @@
                     {
                         "name": "onCreatePost",
                         "description": null,
-                        "args": [],
+                        "args": [
+                            {
+                                "name": "owner",
+                                "description": null,
+                                "type": {
+                                    "kind": "NON_NULL",
+                                    "name": null,
+                                    "ofType": {
+                                        "kind": "SCALAR",
+                                        "name": "String",
+                                        "ofType": null
+                                    }
+                                },
+                                "defaultValue": null
+                            }
+                        ],
                         "type": {
                             "kind": "OBJECT",
                             "name": "Post",
@@ -3198,7 +3339,22 @@
                     {
                         "name": "onUpdatePost",
                         "description": null,
-                        "args": [],
+                        "args": [
+                            {
+                                "name": "owner",
+                                "description": null,
+                                "type": {
+                                    "kind": "NON_NULL",
+                                    "name": null,
+                                    "ofType": {
+                                        "kind": "SCALAR",
+                                        "name": "String",
+                                        "ofType": null
+                                    }
+                                },
+                                "defaultValue": null
+                            }
+                        ],
                         "type": {
                             "kind": "OBJECT",
                             "name": "Post",
@@ -3210,7 +3366,22 @@
                     {
                         "name": "onDeletePost",
                         "description": null,
-                        "args": [],
+                        "args": [
+                            {
+                                "name": "owner",
+                                "description": null,
+                                "type": {
+                                    "kind": "NON_NULL",
+                                    "name": null,
+                                    "ofType": {
+                                        "kind": "SCALAR",
+                                        "name": "String",
+                                        "ofType": null
+                                    }
+                                },
+                                "defaultValue": null
+                            }
+                        ],
                         "type": {
                             "kind": "OBJECT",
                             "name": "Post",
@@ -3222,7 +3393,22 @@
                     {
                         "name": "onCreateComment",
                         "description": null,
-                        "args": [],
+                        "args": [
+                            {
+                                "name": "owner",
+                                "description": null,
+                                "type": {
+                                    "kind": "NON_NULL",
+                                    "name": null,
+                                    "ofType": {
+                                        "kind": "SCALAR",
+                                        "name": "String",
+                                        "ofType": null
+                                    }
+                                },
+                                "defaultValue": null
+                            }
+                        ],
                         "type": {
                             "kind": "OBJECT",
                             "name": "Comment",
@@ -3234,7 +3420,22 @@
                     {
                         "name": "onUpdateComment",
                         "description": null,
-                        "args": [],
+                        "args": [
+                            {
+                                "name": "owner",
+                                "description": null,
+                                "type": {
+                                    "kind": "NON_NULL",
+                                    "name": null,
+                                    "ofType": {
+                                        "kind": "SCALAR",
+                                        "name": "String",
+                                        "ofType": null
+                                    }
+                                },
+                                "defaultValue": null
+                            }
+                        ],
                         "type": {
                             "kind": "OBJECT",
                             "name": "Comment",
@@ -3246,7 +3447,22 @@
                     {
                         "name": "onDeleteComment",
                         "description": null,
-                        "args": [],
+                        "args": [
+                            {
+                                "name": "owner",
+                                "description": null,
+                                "type": {
+                                    "kind": "NON_NULL",
+                                    "name": null,
+                                    "ofType": {
+                                        "kind": "SCALAR",
+                                        "name": "String",
+                                        "ofType": null
+                                    }
+                                },
+                                "defaultValue": null
+                            }
+                        ],
                         "type": {
                             "kind": "OBJECT",
                             "name": "Comment",

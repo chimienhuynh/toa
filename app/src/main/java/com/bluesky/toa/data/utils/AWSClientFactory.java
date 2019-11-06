@@ -4,9 +4,8 @@ import android.content.Context;
 
 import com.amazonaws.mobile.config.AWSConfiguration;
 import com.amazonaws.mobileconnectors.appsync.AWSAppSyncClient;
-import com.amazonaws.mobileconnectors.appsync.sigv4.APIKeyAuthProvider;
-import com.amazonaws.mobileconnectors.appsync.sigv4.BasicAPIKeyAuthProvider;
-import com.amazonaws.regions.Regions;
+import com.amazonaws.mobileconnectors.appsync.sigv4.BasicCognitoUserPoolsAuthProvider;
+import com.amazonaws.mobileconnectors.cognitoidentityprovider.CognitoUserPool;
 
 public class AWSClientFactory {
 
@@ -15,14 +14,15 @@ public class AWSClientFactory {
     public static synchronized void init(final Context context) {
 
         if (client == null) {
-            final AWSConfiguration awsConfiguration = new AWSConfiguration(context);
-            final APIKeyAuthProvider apiKey = new BasicAPIKeyAuthProvider(awsConfiguration);
+            final AWSConfiguration awsConfig = new AWSConfiguration(context);
+
+            final CognitoUserPool cognitoUserPool = new CognitoUserPool(context, awsConfig);
+            final BasicCognitoUserPoolsAuthProvider basicCognitoUserPoolsAuthProvider = new BasicCognitoUserPoolsAuthProvider(cognitoUserPool);
 
             client = AWSAppSyncClient.builder()
                     .context(context)
-                    .region(Regions.US_EAST_2)
-                    .awsConfiguration(awsConfiguration)
-                    .apiKey(apiKey)
+                    .awsConfiguration(awsConfig)
+                    .cognitoUserPoolsAuthProvider(basicCognitoUserPoolsAuthProvider)
                     .build();
         }
     }

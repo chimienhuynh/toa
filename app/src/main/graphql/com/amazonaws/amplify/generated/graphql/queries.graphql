@@ -16,6 +16,7 @@ query GetAccount($id: ID!) {
       country
       type
       updatedAt
+      owner
     }
     posts {
       nextToken
@@ -64,6 +65,7 @@ query GetProfile($id: ID!) {
     profilePicture {
       ...S3Object
     }
+    owner
   }
 }
 query ListProfiles(
@@ -83,6 +85,7 @@ query ListProfiles(
       country
       type
       updatedAt
+      owner
     }
     nextToken
   }
@@ -107,6 +110,7 @@ query GetPost($id: ID!) {
     postImage {
       ...S3Object
     }
+    owner
   }
 }
 query ListPosts(
@@ -121,6 +125,7 @@ query ListPosts(
       createdAt
       updatedAt
       content
+      owner
     }
     nextToken
   }
@@ -144,7 +149,9 @@ query GetComment($id: ID!) {
       createdAt
       updatedAt
       content
+      owner
     }
+    owner
   }
 }
 query ListComments(
@@ -158,6 +165,7 @@ query ListComments(
       createdAt
       updatedAt
       content
+      owner
     }
     nextToken
   }

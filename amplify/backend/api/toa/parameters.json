@@ -1,5 +1,11 @@
 {
     "AppSyncApiName": "toa",
     "DynamoDBBillingMode": "PAY_PER_REQUEST",
-    "DynamoDBEnableServerSideEncryption": "false"
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authtoa852bfe97",
+            "Outputs.UserPoolId"
+        ]
+    }
 }

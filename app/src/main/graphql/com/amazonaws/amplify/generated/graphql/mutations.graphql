@@ -16,6 +16,7 @@ mutation CreateAccount($input: CreateAccountInput!) {
       country
       type
       updatedAt
+      owner
     }
     posts {
       nextToken
@@ -43,6 +44,7 @@ mutation UpdateAccount($input: UpdateAccountInput!) {
       country
       type
       updatedAt
+      owner
     }
     posts {
       nextToken
@@ -70,6 +72,7 @@ mutation DeleteAccount($input: DeleteAccountInput!) {
       country
       type
       updatedAt
+      owner
     }
     posts {
       nextToken
@@ -102,6 +105,7 @@ mutation CreateProfile($input: CreateProfileInput!) {
     profilePicture {
       ...S3Object
     }
+    owner
   }
 }
 mutation UpdateProfile($input: UpdateProfileInput!) {
@@ -126,6 +130,7 @@ mutation UpdateProfile($input: UpdateProfileInput!) {
     profilePicture {
       ...S3Object
     }
+    owner
   }
 }
 mutation DeleteProfile($input: DeleteProfileInput!) {
@@ -150,6 +155,7 @@ mutation DeleteProfile($input: DeleteProfileInput!) {
     profilePicture {
       ...S3Object
     }
+    owner
   }
 }
 mutation CreatePost($input: CreatePostInput!) {
@@ -172,6 +178,7 @@ mutation CreatePost($input: CreatePostInput!) {
     postImage {
       ...S3Object
     }
+    owner
   }
 }
 mutation UpdatePost($input: UpdatePostInput!) {
@@ -194,6 +201,7 @@ mutation UpdatePost($input: UpdatePostInput!) {
     postImage {
       ...S3Object
     }
+    owner
   }
 }
 mutation DeletePost($input: DeletePostInput!) {
@@ -216,6 +224,7 @@ mutation DeletePost($input: DeletePostInput!) {
     postImage {
       ...S3Object
     }
+    owner
   }
 }
 mutation CreateComment($input: CreateCommentInput!) {
@@ -237,7 +246,9 @@ mutation CreateComment($input: CreateCommentInput!) {
       createdAt
       updatedAt
       content
+      owner
     }
+    owner
   }
 }
 mutation UpdateComment($input: UpdateCommentInput!) {
@@ -259,7 +270,9 @@ mutation UpdateComment($input: UpdateCommentInput!) {
       createdAt
       updatedAt
       content
+      owner
     }
+    owner
   }
 }
 mutation DeleteComment($input: DeleteCommentInput!) {
@@ -281,6 +294,8 @@ mutation DeleteComment($input: DeleteCommentInput!) {
       createdAt
       updatedAt
       content
+      owner
     }
+    owner
   }
 }

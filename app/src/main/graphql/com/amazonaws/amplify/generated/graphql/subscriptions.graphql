@@ -1,6 +1,6 @@
 # this is an auto generated file. This will be overwritten
-subscription OnCreateAccount {
-  onCreateAccount {
+subscription OnCreateAccount($id: String!) {
+  onCreateAccount(id: $id) {
     id
     email
     username
@@ -16,6 +16,7 @@ subscription OnCreateAccount {
       country
       type
       updatedAt
+      owner
     }
     posts {
       nextToken
@@ -26,8 +27,8 @@ subscription OnCreateAccount {
     createdAt
   }
 }
-subscription OnUpdateAccount {
-  onUpdateAccount {
+subscription OnUpdateAccount($id: String!) {
+  onUpdateAccount(id: $id) {
     id
     email
     username
@@ -43,6 +44,7 @@ subscription OnUpdateAccount {
       country
       type
       updatedAt
+      owner
     }
     posts {
       nextToken
@@ -53,8 +55,8 @@ subscription OnUpdateAccount {
     createdAt
   }
 }
-subscription OnDeleteAccount {
-  onDeleteAccount {
+subscription OnDeleteAccount($id: String!) {
+  onDeleteAccount(id: $id) {
     id
     email
     username
@@ -70,6 +72,7 @@ subscription OnDeleteAccount {
       country
       type
       updatedAt
+      owner
     }
     posts {
       nextToken
@@ -80,8 +83,8 @@ subscription OnDeleteAccount {
     createdAt
   }
 }
-subscription OnCreateProfile {
-  onCreateProfile {
+subscription OnCreateProfile($owner: String!) {
+  onCreateProfile(owner: $owner) {
     id
     account {
       id
@@ -102,10 +105,11 @@ subscription OnCreateProfile {
     profilePicture {
       ...S3Object
     }
+    owner
   }
 }
-subscription OnUpdateProfile {
-  onUpdateProfile {
+subscription OnUpdateProfile($owner: String!) {
+  onUpdateProfile(owner: $owner) {
     id
     account {
       id
@@ -126,10 +130,11 @@ subscription OnUpdateProfile {
     profilePicture {
       ...S3Object
     }
+    owner
   }
 }
-subscription OnDeleteProfile {
-  onDeleteProfile {
+subscription OnDeleteProfile($owner: String!) {
+  onDeleteProfile(owner: $owner) {
     id
     account {
       id
@@ -150,10 +155,11 @@ subscription OnDeleteProfile {
     profilePicture {
       ...S3Object
     }
+    owner
   }
 }
-subscription OnCreatePost {
-  onCreatePost {
+subscription OnCreatePost($owner: String!) {
+  onCreatePost(owner: $owner) {
     id
     title
     createdAt
@@ -172,10 +178,11 @@ subscription OnCreatePost {
     postImage {
       ...S3Object
     }
+    owner
   }
 }
-subscription OnUpdatePost {
-  onUpdatePost {
+subscription OnUpdatePost($owner: String!) {
+  onUpdatePost(owner: $owner) {
     id
     title
     createdAt
@@ -194,10 +201,11 @@ subscription OnUpdatePost {
     postImage {
       ...S3Object
     }
+    owner
   }
 }
-subscription OnDeletePost {
-  onDeletePost {
+subscription OnDeletePost($owner: String!) {
+  onDeletePost(owner: $owner) {
     id
     title
     createdAt
@@ -216,10 +224,11 @@ subscription OnDeletePost {
     postImage {
       ...S3Object
     }
+    owner
   }
 }
-subscription OnCreateComment {
-  onCreateComment {
+subscription OnCreateComment($owner: String!) {
+  onCreateComment(owner: $owner) {
     id
     createdAt
     updatedAt
@@ -237,11 +246,13 @@ subscription OnCreateComment {
       createdAt
       updatedAt
       content
+      owner
     }
+    owner
   }
 }
-subscription OnUpdateComment {
-  onUpdateComment {
+subscription OnUpdateComment($owner: String!) {
+  onUpdateComment(owner: $owner) {
     id
     createdAt
     updatedAt
@@ -259,11 +270,13 @@ subscription OnUpdateComment {
       createdAt
       updatedAt
       content
+      owner
     }
+    owner
   }
 }
-subscription OnDeleteComment {
-  onDeleteComment {
+subscription OnDeleteComment($owner: String!) {
+  onDeleteComment(owner: $owner) {
     id
     createdAt
     updatedAt
@@ -281,6 +294,8 @@ subscription OnDeleteComment {
       createdAt
       updatedAt
       content
+      owner
     }
+    owner
   }
 }

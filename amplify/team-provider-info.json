@@ -9,6 +9,11 @@
             "UnauthRoleName": "amplify-toa-toaenv-152831-unauthRole",
             "StackName": "amplify-toa-toaenv-152831",
             "StackId": "arn:aws:cloudformation:us-east-2:223886604324:stack/amplify-toa-toaenv-152831/7f8df090-fe78-11e9-b8b4-06c94a3c6390"
+        },
+        "categories": {
+            "auth": {
+                "toa852bfe97": {}
+            }
         }
     }
 }

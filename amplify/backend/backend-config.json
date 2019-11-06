@@ -1,6 +1,12 @@
 {
 	"function": {},
-	"auth": {},
+	"auth": {
+		"toa852bfe97": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
 	"api": {
 		"toa": {
 			"service": "AppSync",
@@ -9,10 +15,9 @@
 				"authConfig": {
 					"additionalAuthenticationProviders": [],
 					"defaultAuthentication": {
-						"authenticationType": "API_KEY",
-						"apiKeyConfig": {
-							"description": "toaApi",
-							"apiKeyExpirationDays": "365"
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authtoa852bfe97"
 						}
 					}
 				}

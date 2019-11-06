@@ -1,4 +1,6 @@
-type Account @model {
+type Account
+    @model
+    @auth(rules: [{ allow: owner, ownerField: "id", operations: [create, update, delete] }]) {
     id: ID!
     email: String!
     username: String!
@@ -9,7 +11,7 @@ type Account @model {
     createdAt: String
 }
 
-type Profile @model {
+type Profile @model @auth(rules: [{ allow: owner, operations: [create, update, delete] }]) {
     id: ID!
     account: Account @connection(name: "AccountProfile")
     firstName: String
@@ -24,7 +26,7 @@ type Profile @model {
     profilePicture: S3Object
 }
 
-type Post @model {
+type Post @model @auth(rules: [{ allow: owner, operations: [create, update, delete] }]) {
     id: ID!
     title: String
     createdAt: String
@@ -35,7 +37,7 @@ type Post @model {
     postImage: S3Object
 }
 
-type Comment @model {
+type Comment @model @auth(rules: [{ allow: owner, operations: [create, update, delete] }]) {
     id: ID!
     createdAt: String
     updatedAt: String
