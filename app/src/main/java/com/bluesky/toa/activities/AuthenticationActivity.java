@@ -1,6 +1,7 @@
 package com.bluesky.toa.activities;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -71,7 +72,11 @@ public class AuthenticationActivity extends AppCompatActivity {
     private void showSignIn() {
         try {
             AWSMobileClient.getInstance().showSignIn(this,
-                    SignInUIOptions.builder().nextActivity(MainActivity.class).build());
+                    SignInUIOptions.builder()
+                            .nextActivity(MainActivity.class)
+                            .logo(R.drawable.logo)
+                            .backgroundColor(Color.parseColor("#FFFFFF"))
+                            .build());
         } catch (Exception e) {
             Log.e(TAG, e.toString());
         }
