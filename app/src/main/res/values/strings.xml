@@ -61,5 +61,10 @@
     <string name="profile_city">Ottawa</string>
     <string name="profile_province">Ontario</string>
     <string name="profile_country">Canada</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="conversations">Conversations</string>
+    <string name="contacts">Contacts</string>
 
 </resources>

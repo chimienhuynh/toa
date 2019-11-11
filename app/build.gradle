@@ -33,6 +33,8 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
@@ -46,12 +48,12 @@ dependencies {
     implementation 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
 
     //For AWSMobileClient:
-    implementation ('com.amazonaws:aws-android-sdk-mobile-client:2.13.+@aar') { transitive = true; }
+    implementation('com.amazonaws:aws-android-sdk-mobile-client:2.13.+@aar') { transitive = true; }
 
     //For the drop-in UI:
-    implementation ('com.amazonaws:aws-android-sdk-auth-userpools:2.13.+@aar') { transitive = true; }
-    implementation ('com.amazonaws:aws-android-sdk-auth-ui:2.13.+@aar') { transitive = true; }
+    implementation('com.amazonaws:aws-android-sdk-auth-userpools:2.13.+@aar') { transitive = true; }
+    implementation('com.amazonaws:aws-android-sdk-auth-ui:2.13.+@aar') { transitive = true; }
     implementation files('app/libs/aws-android-sdk-2.16.2.zip')
 
-    implementation ('com.amazonaws:aws-android-sdk-cognitoauth:2.9.+@aar') { transitive = true }
+    implementation('com.amazonaws:aws-android-sdk-cognitoauth:2.9.+@aar') { transitive = true }
 }
