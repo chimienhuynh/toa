@@ -58,7 +58,7 @@ public class HomePageActivity extends AppCompatActivity {
 
         homepageBtn4.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, DashBoardActivity.class);
+                Intent intent = new Intent(HomePageActivity.this, ResourceActivity.class);
                 startActivity(intent);
             }
         });

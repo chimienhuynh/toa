@@ -45,10 +45,12 @@
         <activity android:name=".ChatActivity"
             android:theme="@style/AppTheme"></activity>
 
-        <activity
-            android:name=".activities.GuruProfileActivity"/>
-        <activity
-            android:name=".activities.FanProfileActivity"/>
+        <activity android:name=".activities.GuruProfileActivity"/>
+        <activity android:name=".activities.FanProfileActivity"/>
+        <activity android:name=".activities.ResourceActivity"/>
+        <activity android:name=".activities.GuidelinesActivity"/>
+        <activity android:name=".activities.ResourceMaintenanceGuideActivity"/>
+        <activity android:name=".activities.ResourceWorkSheetActivity"/>
 
         <service android:name="org.eclipse.paho.android.service.MqttService" />
     </application>

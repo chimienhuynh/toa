@@ -56,4 +56,5 @@ dependencies {
     implementation files('app/libs/aws-android-sdk-2.16.2.zip')
 
     implementation('com.amazonaws:aws-android-sdk-cognitoauth:2.9.+@aar') { transitive = true }
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
 }

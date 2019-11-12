@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#B4950D"
+        android:textSize="18sp"
+        android:text="@string/resource_title" />
+
+    <Button
+        android:id="@+id/documentguidelines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resource_documentguidelines" />
+
+    <Button
+        android:id="@+id/documentmaintenanceguide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resource_documentmaintenanceguide" />
+
+    <Button
+        android:id="@+id/worksheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resource_worksheet" />
+</LinearLayout>

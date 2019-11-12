@@ -83,4 +83,8 @@
     <string name="fanprofile_guru">Organizing Fan</string>
     <string name="fanprofile_location">Toronto, Canada</string>
 
+    <string name="resource_title">Resources</string>
+    <string name="resource_documentguidelines">DOCUMENT CATEGORIZATION/RETENTION GUIDE</string>
+    <string name="resource_documentmaintenanceguide">Document Maintenance Guide</string>
+    <string name="resource_worksheet">3R De-cluttering Strategy Worksheet</string>
 </resources>
