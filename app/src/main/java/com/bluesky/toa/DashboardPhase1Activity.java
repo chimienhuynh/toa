@@ -8,7 +8,9 @@ import android.view.View;
 import android.widget.Button;
 
 import com.bluesky.toa.activities.DashBoardActivity;
+import com.bluesky.toa.activities.GuruProfileActivity;
 import com.bluesky.toa.activities.HomePageActivity;
+import com.bluesky.toa.activities.PastProjectActivity;
 
 public class DashboardPhase1Activity extends AppCompatActivity {
 
@@ -32,7 +34,7 @@ public class DashboardPhase1Activity extends AppCompatActivity {
 
         projectDasboardBtnEPF.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(DashboardPhase1Activity.this, HomePageActivity.class);
+                Intent intent = new Intent(DashboardPhase1Activity.this, GuruProfileActivity.class);
                 startActivity(intent);
             }
         });

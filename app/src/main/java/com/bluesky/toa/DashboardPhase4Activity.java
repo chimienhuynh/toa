@@ -6,7 +6,9 @@ import android.view.View;
 import android.widget.Button;
 
 import com.bluesky.toa.activities.DashBoardActivity;
+import com.bluesky.toa.activities.FanProfileActivity;
 import com.bluesky.toa.activities.HomePageActivity;
+import com.bluesky.toa.activities.PastProjectActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -32,7 +34,7 @@ public class DashboardPhase4Activity extends AppCompatActivity {
 
         projectDasboardBtnEPF.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(DashboardPhase4Activity.this, HomePageActivity.class);
+                Intent intent = new Intent(DashboardPhase4Activity.this, FanProfileActivity.class);
                 startActivity(intent);
             }
         });

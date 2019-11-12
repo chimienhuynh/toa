@@ -1,8 +1,9 @@
-package com.bluesky.toa;
+package com.bluesky.toa.activities;
 
 import android.os.Bundle;
 import android.view.View;
 
+import com.bluesky.toa.R;
 import com.bluesky.toa.ui.chat.adapters.SectionsPagerAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;

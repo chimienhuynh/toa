@@ -7,8 +7,6 @@ import com.github.barteksc.pdfviewer.PDFView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-
-
 public class GuidelinesActivity extends AppCompatActivity {
 
     @Override

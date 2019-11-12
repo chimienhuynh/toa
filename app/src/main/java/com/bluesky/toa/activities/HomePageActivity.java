@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.bluesky.toa.ChatActivity;
+import com.amazonaws.mobile.client.AWSMobileClient;
 import com.bluesky.toa.R;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,7 +37,7 @@ public class HomePageActivity extends AppCompatActivity {
 
         homepageBtn1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, ChatActivity.class);
+                Intent intent = new Intent(HomePageActivity.this, DashBoardActivity.class);
                 startActivity(intent);
             }
         });
@@ -51,7 +51,7 @@ public class HomePageActivity extends AppCompatActivity {
 
         homepageBtn3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, ChatActivity.class);
+                Intent intent = new Intent(HomePageActivity.this, ResourceActivity.class);
                 startActivity(intent);
             }
         });
@@ -72,14 +72,14 @@ public class HomePageActivity extends AppCompatActivity {
 
         homepageBtn6.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, DashBoardActivity.class);
+                Intent intent = new Intent(HomePageActivity.this, ChatActivity.class);
                 startActivity(intent);
             }
         });
 
         homepageBottomBtn1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, ChatActivity.class);
+                Intent intent = new Intent(HomePageActivity.this, FanProfileActivity.class);
                 startActivity(intent);
             }
         });
@@ -93,8 +93,9 @@ public class HomePageActivity extends AppCompatActivity {
 
         homepageBottomBtn3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, FanProfileActivity.class);
-                startActivity(intent);
+                AWSMobileClient.getInstance().signOut();
+//                Intent intent = new Intent(HomePageActivity.this, FanProfileActivity.class);
+//                startActivity(intent);
             }
         });
 

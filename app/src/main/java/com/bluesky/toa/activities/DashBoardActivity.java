@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.bluesky.toa.ChatActivity;
 import com.bluesky.toa.DashboardPhase1Activity;
 import com.bluesky.toa.DashboardPhase2Activity;
 import com.bluesky.toa.DashboardPhase3Activity;
@@ -16,7 +15,6 @@ import com.bluesky.toa.DashboardPhase5Activity;
 import com.bluesky.toa.DashboardPhase6Activity;
 import com.bluesky.toa.DashboardPhase7Activity;
 import com.bluesky.toa.DashboardPhase8Activity;
-import com.bluesky.toa.PastProjectActivity;
 import com.bluesky.toa.R;
 
 /**
@@ -103,7 +101,7 @@ public class DashBoardActivity extends AppCompatActivity {
 
         projectDasboardBtnEPF.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(DashBoardActivity.this, ChatActivity.class);
+                Intent intent = new Intent(DashBoardActivity.this, GuruProfileActivity.class);
                 startActivity(intent);
             }
         });

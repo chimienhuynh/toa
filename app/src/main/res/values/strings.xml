@@ -70,8 +70,7 @@
     <string name="project_dashboard_title">Project Dashboard</string>
     <string name="project_dashboard_phase_title">Project Dashboard \nPhase</string>
     <string name="back_to_dashboard">Back to Project Main Dashboard</string>
-    <string name="project_dashboard_past_p_title">Past Projects \nList\n\nComing Soon.</string>
-
+    <string name="project_dashboard_past_p_title">Past Projects \nList\n\nNo Projects Done yet.</string>
 
     <string name="guruprofile_profile">Profile</string>
     <string name="guruprofile_name">Jesmine Onyeukwu</string>
