@@ -72,4 +72,15 @@
     <string name="back_to_dashboard">Back to Project Main Dashboard</string>
     <string name="project_dashboard_past_p_title">Past Projects \nList\n\nComing Soon.</string>
 
+
+    <string name="guruprofile_profile">Profile</string>
+    <string name="guruprofile_name">Jesmine Onyeukwu</string>
+    <string name="guruprofile_guru">Organizing Guru</string>
+    <string name="guruprofile_location">Ottawa, Canada</string>
+    <string name="guruprofile_logout">LOG OUT</string>
+
+    <string name="fanprofile_name">Riley Moss</string>
+    <string name="fanprofile_guru">Organizing Fan</string>
+    <string name="fanprofile_location">Toronto, Canada</string>
+
 </resources>

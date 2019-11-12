@@ -93,21 +93,21 @@ public class HomePageActivity extends AppCompatActivity {
 
         homepageBottomBtn3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, ChatActivity.class);
+                Intent intent = new Intent(HomePageActivity.this, FanProfileActivity.class);
                 startActivity(intent);
             }
         });
 
         homepageBottomBtn4.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, DashBoardActivity.class);
+                Intent intent = new Intent(HomePageActivity.this, ChatActivity.class);
                 startActivity(intent);
             }
         });
 
         homepageBottomBtn5.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, ChatActivity.class);
+                Intent intent = new Intent(HomePageActivity.this, GuruProfileActivity.class);
                 startActivity(intent);
             }
         });

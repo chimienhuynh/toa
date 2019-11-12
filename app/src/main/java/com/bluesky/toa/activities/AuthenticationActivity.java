@@ -30,7 +30,7 @@ public class AuthenticationActivity extends AppCompatActivity {
                 Log.i(TAG, userStateDetails.getUserState().toString());
                 switch (userStateDetails.getUserState()){
                     case SIGNED_IN:
-                        Intent i = new Intent(AuthenticationActivity.this, MainActivity.class);
+                        Intent i = new Intent(AuthenticationActivity.this, HomePageActivity.class);
                         startActivity(i);
                         break;
                     case SIGNED_OUT:
@@ -73,7 +73,7 @@ public class AuthenticationActivity extends AppCompatActivity {
         try {
             AWSMobileClient.getInstance().showSignIn(this,
                     SignInUIOptions.builder()
-                            .nextActivity(MainActivity.class)
+                            .nextActivity(HomePageActivity.class)
                             .logo(R.drawable.logo)
                             .backgroundColor(Color.parseColor("#FFFFFF"))
                             .build());
