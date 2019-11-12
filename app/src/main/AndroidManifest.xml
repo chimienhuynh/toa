@@ -16,19 +16,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".activities.DashBoardActivity"/>
-        <activity android:name=".activities.HomePageActivity"
+        <activity android:name=".PastProjectActivity"></activity>
+        <activity android:name=".DashboardPhase1Activity" />
+        <activity android:name=".DashboardPhase2Activity" />
+        <activity android:name=".DashboardPhase3Activity" />
+        <activity android:name=".DashboardPhase4Activity" />
+        <activity android:name=".DashboardPhase5Activity" />
+        <activity android:name=".DashboardPhase6Activity" />
+        <activity android:name=".DashboardPhase7Activity" />
+        <activity android:name=".DashboardPhase8Activity" />
+        <activity android:name=".activities.DashBoardActivity" />
+        <activity
+            android:name=".activities.HomePageActivity"
             android:windowSoftInputMode="stateAlwaysHidden">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-
         <activity
             android:name=".activities.AuthenticationActivity"
-            android:noHistory="true"></activity>
+            android:noHistory="true" />
         <activity android:name=".activities.MainActivity" />
         <activity android:name=".ChatActivity" />
 

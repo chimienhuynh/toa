@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PastProjectActivity">
+
+    <TextView
+        android:id="@+id/dash_board_pp_title_jj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/project_dashboard_past_p_title"
+        android:textAlignment="center"
+        android:textColor="#B4950D"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/imageButton_edit_profile_pdb_jj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:drawableStart="@drawable/pdb_b_button_edp"
+        android:textAllCaps="false"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/imageButton_home_page_pdb_jj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:drawableBottom="@drawable/toa_48"
+        android:textAllCaps="false"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/imageButton_view_main_pdb_jj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:drawableEnd="@drawable/pdb_b_button_pmdb"
+        android:textAllCaps="false"
+        android:textSize="12sp" />
+
+</RelativeLayout>

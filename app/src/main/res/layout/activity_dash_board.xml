@@ -152,7 +152,7 @@
             android:textSize="12sp" />
 
         <Button
-            android:id="@+id/imageButton8_view_past_project_pdb_jj"
+            android:id="@+id/imageButton_view_past_project_pdb_jj"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"

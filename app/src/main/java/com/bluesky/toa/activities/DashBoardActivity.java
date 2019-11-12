@@ -8,6 +8,15 @@ import android.view.View;
 import android.widget.Button;
 
 import com.bluesky.toa.ChatActivity;
+import com.bluesky.toa.DashboardPhase1Activity;
+import com.bluesky.toa.DashboardPhase2Activity;
+import com.bluesky.toa.DashboardPhase3Activity;
+import com.bluesky.toa.DashboardPhase4Activity;
+import com.bluesky.toa.DashboardPhase5Activity;
+import com.bluesky.toa.DashboardPhase6Activity;
+import com.bluesky.toa.DashboardPhase7Activity;
+import com.bluesky.toa.DashboardPhase8Activity;
+import com.bluesky.toa.PastProjectActivity;
 import com.bluesky.toa.R;
 
 /**
@@ -34,60 +43,60 @@ public class DashBoardActivity extends AppCompatActivity {
 
         Button projectDasboardBtnEPF = findViewById(R.id.imageButton_edit_profile_pdb_jj);
         Button projectDasboardBtnHP = findViewById(R.id.imageButton_home_page_pdb_jj);
-        Button projectDasboardBtnVPP = findViewById(R.id.imageButton8_view_past_project_pdb_jj);
+        Button projectDasboardBtnVPP = findViewById(R.id.imageButton_view_past_project_pdb_jj);
 
         projectDasboardBtn1.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(DashBoardActivity.this, ChatActivity.class);
+                Intent intent = new Intent(DashBoardActivity.this, DashboardPhase1Activity.class);
                 startActivity(intent);
             }
         });
 
         projectDasboardBtn2.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(DashBoardActivity.this, ChatActivity.class);
+                Intent intent = new Intent(DashBoardActivity.this, DashboardPhase2Activity.class);
                 startActivity(intent);
             }
         });
 
         projectDasboardBtn3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(DashBoardActivity.this, ChatActivity.class);
+                Intent intent = new Intent(DashBoardActivity.this, DashboardPhase3Activity.class);
                 startActivity(intent);
             }
         });
 
         projectDasboardBtn4.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(DashBoardActivity.this, ChatActivity.class);
+                Intent intent = new Intent(DashBoardActivity.this, DashboardPhase4Activity.class);
                 startActivity(intent);
             }
         });
 
         projectDasboardBtn5.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(DashBoardActivity.this, ChatActivity.class);
+                Intent intent = new Intent(DashBoardActivity.this, DashboardPhase5Activity.class);
                 startActivity(intent);
             }
         });
 
         projectDasboardBtn6.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(DashBoardActivity.this, ChatActivity.class);
+                Intent intent = new Intent(DashBoardActivity.this, DashboardPhase6Activity.class);
                 startActivity(intent);
             }
         });
 
         projectDasboardBtn7.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(DashBoardActivity.this, ChatActivity.class);
+                Intent intent = new Intent(DashBoardActivity.this, DashboardPhase7Activity.class);
                 startActivity(intent);
             }
         });
 
         projectDasboardBtn8.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(DashBoardActivity.this, ChatActivity.class);
+                Intent intent = new Intent(DashBoardActivity.this, DashboardPhase8Activity.class);
                 startActivity(intent);
             }
         });
@@ -108,7 +117,7 @@ public class DashBoardActivity extends AppCompatActivity {
 
         projectDasboardBtnVPP.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(DashBoardActivity.this, ChatActivity.class);
+                Intent intent = new Intent(DashBoardActivity.this, PastProjectActivity.class);
                 startActivity(intent);
             }
         });

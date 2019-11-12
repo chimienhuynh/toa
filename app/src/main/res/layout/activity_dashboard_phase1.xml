@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardPhase1Activity">
+
+    <TextView
+        android:id="@+id/dash_board_p_title_jj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/project_dashboard_phase_title"
+        android:textAlignment="center"
+        android:textColor="#B4950D"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/imageButton1_pdb_jj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:drawableTop="@drawable/pdb_b_button_1_1"
+        android:text="@string/back_to_dashboard"
+        android:layout_centerInParent="true"
+        android:textAllCaps="false"
+        android:textColor="#B4950D"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/imageButton_edit_profile_pdb_jj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:drawableStart="@drawable/pdb_b_button_edp"
+        android:textAllCaps="false"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/imageButton_home_page_pdb_jj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:drawableBottom="@drawable/toa_48"
+        android:textAllCaps="false"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/imageButton_view_past_project_pdb_jj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:drawableEnd="@drawable/pdb_b_button_vpp"
+        android:textAllCaps="false"
+        android:textSize="12sp" />
+
+</RelativeLayout>
