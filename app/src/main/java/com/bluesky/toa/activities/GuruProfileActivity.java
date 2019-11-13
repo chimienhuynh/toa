@@ -1,18 +1,12 @@
 package com.bluesky.toa.activities;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
 
 import com.amazonaws.mobile.client.AWSMobileClient;
 import com.bluesky.toa.R;
-import com.bluesky.toa.data.utils.AWSClientFactory;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,11 +20,13 @@ public class GuruProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_guruprofile);
 
 
-        Button button= (Button)(findViewById(R.id.logout));
+        Button button= (Button)(findViewById(R.id.guru_profile_logout));
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AWSMobileClient.getInstance().signOut();
+                Intent intent = new Intent(GuruProfileActivity.this, AuthenticationActivity.class);
+                startActivity(intent);
             }
         });
 

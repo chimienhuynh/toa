@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.amazonaws.mobile.client.AWSMobileClient;
 import com.bluesky.toa.R;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,12 +19,13 @@ public class FanProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fanprofile);
 
-        Button button= (Button)(findViewById(R.id.logout));
+        Button button= (Button)(findViewById(R.id.fan_profile_logout));
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent logOut = new Intent(FanProfileActivity.this, AuthenticationActivity.class);
-                startActivity(logOut);
+                AWSMobileClient.getInstance().signOut();
+                Intent intent = new Intent(FanProfileActivity.this, AuthenticationActivity.class);
+                startActivity(intent);
             }
         });
 

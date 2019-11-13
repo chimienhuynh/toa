@@ -1,49 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
     <TextView
+        android:id="@+id/guru_profile_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="32dp"
+        android:layout_alignParentTop="true"
+        android:textSize="32sp"
+        android:textColor="#B4950D"
         android:gravity="center"
         android:text="@string/guruprofile_profile" />
 
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/logo_guru"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:layout_below="@id/guru_profile_title"
         android:src="@drawable/profile_photo" />
 
     <TextView
+        android:id="@+id/guru_profile_line1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="32dp"
+        android:layout_below="@id/logo_guru"
+        android:textSize="32sp"
         android:gravity="center"
         android:text="@string/guruprofile_name" />
+
     <TextView
+        android:id="@+id/guru_profile_line2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="32dp"
+        android:layout_below="@id/guru_profile_line1"
+        android:textSize="32sp"
         android:gravity="center"
         android:text="@string/guruprofile_guru" />
 
     <TextView
+        android:id="@+id/guru_profile_line3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="32dp"
+        android:layout_below="@id/guru_profile_line2"
+        android:textSize="32sp"
         android:gravity="center"
         android:text="@string/guruprofile_location" />
 
     <Button
-        android:id="@+id/logout"
+        android:id="@+id/guru_profile_logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
         android:text="@string/guruprofile_logout" />
 
-</LinearLayout>
+</RelativeLayout>

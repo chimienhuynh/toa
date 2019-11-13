@@ -1,21 +1,13 @@
 package com.bluesky.toa.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.bluesky.toa.DashboardPhase1Activity;
-import com.bluesky.toa.DashboardPhase2Activity;
-import com.bluesky.toa.DashboardPhase3Activity;
-import com.bluesky.toa.DashboardPhase4Activity;
-import com.bluesky.toa.DashboardPhase5Activity;
-import com.bluesky.toa.DashboardPhase6Activity;
-import com.bluesky.toa.DashboardPhase7Activity;
-import com.bluesky.toa.DashboardPhase8Activity;
 import com.bluesky.toa.R;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 /**
  * @author Xue Nian Jiang

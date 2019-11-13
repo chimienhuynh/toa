@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,41 +7,55 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/fan_profile_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="32dp"
         android:gravity="center"
+        android:textSize="32sp"
+        android:layout_alignParentTop="true"
+        android:textColor="#B4950D"
         android:text="@string/guruprofile_profile" />
 
     <ImageView
-        android:id="@+id/logo"
+        android:id="@+id/logo_fan"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:layout_below="@+id/fan_profile_title"
         android:src="@drawable/rileypic" />
 
     <TextView
+        android:id="@+id/fan_profile_line1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="32dp"
+        android:layout_below="@+id/logo_fan"
+        android:textSize="32sp"
         android:gravity="center"
         android:text="@string/fanprofile_name" />
     <TextView
+        android:id="@+id/fan_profile_line2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="32dp"
+        android:layout_below="@+id/fan_profile_line1"
+        android:textSize="32sp"
         android:gravity="center"
         android:text="@string/fanprofile_guru" />
 
     <TextView
+        android:id="@+id/fan_profile_line3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="32dp"
+        android:layout_below="@+id/fan_profile_line2"
+        android:textSize="32sp"
         android:gravity="center"
         android:text="@string/fanprofile_location" />
 
     <Button
-        android:id="@+id/logout"
+        android:id="@+id/fan_profile_logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="center"
         android:text="@string/guruprofile_logout" />
-</LinearLayout>
+
+</RelativeLayout>

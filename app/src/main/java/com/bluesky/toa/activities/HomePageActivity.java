@@ -94,8 +94,8 @@ public class HomePageActivity extends AppCompatActivity {
         homepageBottomBtn3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 AWSMobileClient.getInstance().signOut();
-//                Intent intent = new Intent(HomePageActivity.this, FanProfileActivity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(HomePageActivity.this, AuthenticationActivity.class);
+                startActivity(intent);
             }
         });
 
