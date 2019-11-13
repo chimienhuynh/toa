@@ -6,13 +6,27 @@
     <string name="LogInButton">Login</string>
     <string name="Or">Or</string>
     <string name="SignUpButton">Sign up</string>
-
+    <string name="contact_form">Contact Form</string>
+    <string name="how_can_help">How can we Help You?</string>
+    <string name="your_name">Your Name</string>
+    <string name="your_email">Your Email Address</string>
+    <string name="message">Message ...</string>
+    <string name="send">Send</string>
     <string name="LoginText">Email</string>
     <string name="email">Email</string>
     <string name="PasswordText">password</string>
     <string name="password">Password</string>
     <string name="LoginButton1">login</string>
+    <string name="connect">Connect</string>
+    <string name="notification">Notifications</string>
+    <string name="clubs">Clubs</string>
 
+    <string name="community">Community</string>
+    <string name="transactions">Transactions</string>
+    <string name="reward">Rewards</string>
+    <string name="account_history">View Your Account History</string>
+    <string name="support">Support</string>
+    <string name="features">Features</string>
     <string name="name">Name</string>
     <string name="confirmpassword">Confirm Password</string>
     <string name="already_registered">Already registered?</string>
@@ -86,4 +100,17 @@
     <string name="resource_documentguidelines">DOCUMENT CATEGORIZATION/RETENTION GUIDE</string>
     <string name="resource_documentmaintenanceguide">Document Maintenance Guide</string>
     <string name="resource_worksheet">3R De-cluttering Strategy Worksheet</string>
+    <string name="orginising_customer_waits">Your Orginising Customer Awaits</string>
+    <string name="find_local_club">Find A Local Club</string>
+    <string name="join_online_community">Join The Online Community</string>
+    <string name="current_point_balance">Your Current Point Balance\nas of 12/Nov at 12:00</string>
+    <string name="expert_of_week">Expert of the week</string>
+    <string name="insight_of_week">Insight of the week</string>
+    <string name="prohect_of_week">Project of the week</string>
+    <string name="expert">Expert</string>
+    <string name="project">Project</string>
+    <string name="insight">Insight</string>
+    <string name="marketplace">MarketPlace</string>
+
+
 </resources>
