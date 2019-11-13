@@ -16,15 +16,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".PastProjectActivity"></activity>
-        <activity android:name=".DashboardPhase1Activity" />
-        <activity android:name=".DashboardPhase2Activity" />
-        <activity android:name=".DashboardPhase3Activity" />
-        <activity android:name=".DashboardPhase4Activity" />
-        <activity android:name=".DashboardPhase5Activity" />
-        <activity android:name=".DashboardPhase6Activity" />
-        <activity android:name=".DashboardPhase7Activity" />
-        <activity android:name=".DashboardPhase8Activity" />
+        <activity android:name=".activities.PastProjectActivity"></activity>
+        <activity android:name=".activities.DashboardPhase1Activity" />
+        <activity android:name=".activities.DashboardPhase2Activity" />
+        <activity android:name=".activities.DashboardPhase3Activity" />
+        <activity android:name=".activities.DashboardPhase4Activity" />
+        <activity android:name=".activities.DashboardPhase5Activity" />
+        <activity android:name=".activities.DashboardPhase6Activity" />
+        <activity android:name=".activities.DashboardPhase7Activity" />
+        <activity android:name=".activities.DashboardPhase8Activity" />
         <activity android:name=".activities.DashBoardActivity" />
         <activity
             android:name=".activities.HomePageActivity"
@@ -42,7 +42,7 @@
         </activity>
 
         <activity android:name=".activities.MainActivity" />
-        <activity android:name=".ChatActivity"
+        <activity android:name=".activities.ChatActivity"
             android:theme="@style/AppTheme"></activity>
 
         <activity android:name=".activities.GuruProfileActivity"/>

@@ -16,30 +16,27 @@
         android:id="@+id/documentguidelines"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:background="#FFFFFF"
         android:drawableBottom="@drawable/guidelines_btn"
-        android:textSize="12sp"
+        android:textSize="18sp"
         android:textColor="#B4950D"/>
 
     <Button
         android:id="@+id/documentmaintenanceguide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:background="#FFFFFF"
         android:drawableBottom="@drawable/maitainance_btn"
-        android:textSize="12sp"
+        android:textSize="18sp"
         android:textColor="#B4950D"/>
 
     <Button
         android:id="@+id/worksheet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:background="#FFFFFF"
         android:drawableBottom="@drawable/worksheet_btn"
-        android:textSize="12sp"
+        android:textSize="18sp"
         android:textColor="#B4950D"/>
 
 </LinearLayout>
