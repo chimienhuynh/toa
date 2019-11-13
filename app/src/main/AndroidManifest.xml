@@ -25,22 +25,32 @@
         <activity android:name=".activities.DashboardPhase6Activity" />
         <activity android:name=".activities.DashboardPhase7Activity" />
         <activity android:name=".activities.DashboardPhase8Activity" />
+        <activity android:name=".activities.MarketPlaceActivity"></activity>
+        <activity android:name=".activities.InsightActivity" />
+        <activity android:name=".activities.ProjectActivity" />
+        <activity android:name=".activities.ExpertActivity" />
+        <activity android:name=".activities.ClubsActivity" />
+        <activity android:name=".activities.CommunitiesActivity" />
+        <activity android:name=".activities.TransactionsActivity" />
+        <activity android:name=".activities.NotificationActivity" />
+        <activity android:name=".activities.RewardActivity" />
+        <activity android:name=".activities.SupportActivity" />
+        <activity android:name=".activities.FeaturesActivity" />
+        <activity android:name=".activities.ForumActivity" />
         <activity android:name=".activities.DashBoardActivity" />
         <activity
             android:name=".activities.HomePageActivity"
-            android:windowSoftInputMode="stateAlwaysHidden">
-        </activity>
+            android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name=".activities.AuthenticationActivity"
-            android:windowSoftInputMode="stateAlwaysHidden"
-            android:noHistory="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:noHistory="true"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-
         <activity android:name=".activities.MainActivity" />
         <activity android:name=".activities.ChatActivity"
             android:theme="@style/AppTheme"></activity>
@@ -56,4 +66,3 @@
     </application>
 
 </manifest>
-

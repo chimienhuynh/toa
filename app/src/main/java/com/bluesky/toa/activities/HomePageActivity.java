@@ -36,8 +36,10 @@ public class HomePageActivity extends AppCompatActivity {
         Button homepageBottomBtn5 = findViewById(R.id.imageButton_btm5_hp_jj);
 
         homepageBtn1.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, DashBoardActivity.class);
+            public void onClick(View v) {
+//                Intent intent = new Intent(HomePageActivity.this, ChatActivity.class);
+                Intent intent = new Intent(HomePageActivity.this, ForumActivity.class);
+
                 startActivity(intent);
             }
         });
@@ -51,35 +53,37 @@ public class HomePageActivity extends AppCompatActivity {
 
         homepageBtn3.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, ResourceActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        homepageBtn4.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, ResourceActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        homepageBtn5.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
                 Intent intent = new Intent(HomePageActivity.this, ChatActivity.class);
                 startActivity(intent);
             }
         });
 
-        homepageBtn6.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, ChatActivity.class);
+        homepageBtn4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(HomePageActivity.this, ResourceActivity.class);
                 startActivity(intent);
             }
         });
 
-        homepageBottomBtn1.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, FanProfileActivity.class);
+        homepageBtn5.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(HomePageActivity.this, RewardActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        homepageBtn6.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+//                Intent intent = new Intent(HomePageActivity.this, DashBoardActivity.class);
+                Intent intent = new Intent(HomePageActivity.this, SupportActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
+        homepageBottomBtn1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(HomePageActivity.this, NotificationActivity.class);
                 startActivity(intent);
             }
         });
@@ -91,10 +95,11 @@ public class HomePageActivity extends AppCompatActivity {
             }
         });
 
-        homepageBottomBtn3.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                AWSMobileClient.getInstance().signOut();
-                Intent intent = new Intent(HomePageActivity.this, AuthenticationActivity.class);
+        homepageBottomBtn3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+//                Intent intent = new Intent(HomePageActivity.this, FanProfileActivity.class);
+                Intent intent = new Intent(HomePageActivity.this, MarketPlaceActivity.class);
+
                 startActivity(intent);
             }
         });
