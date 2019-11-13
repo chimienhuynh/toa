@@ -35,78 +35,84 @@ public class HomePageActivity extends AppCompatActivity {
         Button homepageBottomBtn4 = findViewById(R.id.imageButton_btm4_hp_jj);
         Button homepageBottomBtn5 = findViewById(R.id.imageButton_btm5_hp_jj);
 
-        homepageBtn1.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, ChatActivity.class);
+        homepageBtn1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+//                Intent intent = new Intent(HomePageActivity.this, ChatActivity.class);
+                Intent intent = new Intent(HomePageActivity.this, ForumActivity.class);
+
                 startActivity(intent);
             }
         });
 
-        homepageBtn2.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        homepageBtn2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
                 Intent intent = new Intent(HomePageActivity.this, DashBoardActivity.class);
                 startActivity(intent);
             }
         });
 
-        homepageBtn3.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, ChatActivity.class);
+        homepageBtn3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(HomePageActivity.this, FeaturesActivity.class);
                 startActivity(intent);
             }
         });
 
-        homepageBtn4.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        homepageBtn4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
                 Intent intent = new Intent(HomePageActivity.this, ResourceActivity.class);
                 startActivity(intent);
             }
         });
 
-        homepageBtn5.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, ChatActivity.class);
+        homepageBtn5.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(HomePageActivity.this, RewardActivity.class);
                 startActivity(intent);
             }
         });
 
-        homepageBtn6.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        homepageBtn6.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+//                Intent intent = new Intent(HomePageActivity.this, DashBoardActivity.class);
+                Intent intent = new Intent(HomePageActivity.this, SupportActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
+        homepageBottomBtn1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(HomePageActivity.this, NotificationActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        homepageBottomBtn2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
                 Intent intent = new Intent(HomePageActivity.this, DashBoardActivity.class);
                 startActivity(intent);
             }
         });
 
-        homepageBottomBtn1.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        homepageBottomBtn3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+//                Intent intent = new Intent(HomePageActivity.this, FanProfileActivity.class);
+                Intent intent = new Intent(HomePageActivity.this, MarketPlaceActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
+        homepageBottomBtn4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
                 Intent intent = new Intent(HomePageActivity.this, ChatActivity.class);
                 startActivity(intent);
             }
         });
 
-        homepageBottomBtn2.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, DashBoardActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        homepageBottomBtn3.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, FanProfileActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        homepageBottomBtn4.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, ChatActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        homepageBottomBtn5.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        homepageBottomBtn5.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
                 Intent intent = new Intent(HomePageActivity.this, GuruProfileActivity.class);
                 startActivity(intent);
             }

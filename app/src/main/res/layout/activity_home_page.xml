@@ -6,108 +6,120 @@
     android:layout_height="fill_parent"
     tools:context=".activities.HomePageActivity">
 
-    <TextView
-        android:id="@+id/home_page_title_jj"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:text="@string/home_page_title"
-        android:textAlignment="center"
-        android:textColor="#B4950D"
-        android:textSize="18sp" />
+        android:layout_height="match_parent"
+        android:layout_marginBottom="65dp">
 
-    <ImageView
-        android:id="@+id/home_page_imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/home_page_title_jj"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/home_48" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/home_page_button_bar1_jj"
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/home_page_imageView">
+            <TextView
+                android:id="@+id/home_page_title_jj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="@string/home_page_title"
+                android:textAlignment="center"
+                android:textColor="#B4950D"
+                android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/imageButton1_hp_jj"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#FFFFFF"
-        android:drawableTop="@drawable/hp_b_button_1_1"
-        android:textAllCaps="false"
-        android:textSize="12sp" />
+            <ImageView
+                android:id="@+id/home_page_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/home_page_title_jj"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/home_48" />
 
-    <Button
-        android:id="@+id/imageButton2_hp_jj"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#FFFFFF"
-        android:drawableTop="@drawable/hp_b_button_1_2"
-        android:textAllCaps="false"
-        android:textSize="12sp" />
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/home_page_button_bar1_jj"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_page_imageView"
+                android:orientation="horizontal">
 
-    <LinearLayout
-        android:id="@+id/home_page_button_bar2_jj"
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/home_page_button_bar1_jj">
+                <Button
+                    android:id="@+id/imageButton1_hp_jj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:drawableTop="@drawable/hp_b_button_1_1"
+                    android:textAllCaps="false"
+                    android:textSize="12sp" />
 
-    <Button
-        android:id="@+id/imageButton3_hp_jj"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#FFFFFF"
-        android:drawableTop="@drawable/hp_b_button_2_1"
-        android:textAllCaps="false"
-        android:textSize="12sp" />
+                <Button
+                    android:id="@+id/imageButton2_hp_jj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:drawableTop="@drawable/hp_b_button_1_2"
+                    android:textAllCaps="false"
+                    android:textSize="12sp" />
+            </LinearLayout>
 
-    <Button
-        android:id="@+id/imageButton4_hp_jj"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#FFFFFF"
-        android:drawableTop="@drawable/hp_b_button_2_2"
-        android:textAllCaps="false"
-        android:textSize="12sp" />
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/home_page_button_bar2_jj"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_page_button_bar1_jj"
+                android:orientation="horizontal">
 
-    <LinearLayout
-        android:id="@+id/home_page_button_bar3_jj"
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/home_page_button_bar2_jj">
+                <Button
+                    android:id="@+id/imageButton3_hp_jj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:drawableTop="@drawable/hp_b_button_2_1"
+                    android:textAllCaps="false"
+                    android:textSize="12sp" />
 
-    <Button
-        android:id="@+id/imageButton5_hp_jj"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#FFFFFF"
-        android:drawableTop="@drawable/hp_b_button_3_1"
-        android:textAllCaps="false"
-        android:textSize="12sp" />
+                <Button
+                    android:id="@+id/imageButton4_hp_jj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:drawableTop="@drawable/hp_b_button_2_2"
+                    android:textAllCaps="false"
+                    android:textSize="12sp" />
+            </LinearLayout>
 
-    <Button
-        android:id="@+id/imageButton6_hp_jj"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:background="#FFFFFF"
-        android:drawableTop="@drawable/hp_b_button_3_2"
-        android:textAllCaps="false"
-        android:textSize="12sp" />
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/home_page_button_bar3_jj"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_page_button_bar2_jj"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/imageButton5_hp_jj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:drawableTop="@drawable/hp_b_button_3_1"
+                    android:textAllCaps="false"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/imageButton6_hp_jj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:drawableTop="@drawable/hp_b_button_3_2"
+                    android:textAllCaps="false"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
 
     <LinearLayout
         android:id="@+id/home_page_bottom_bar_jj"
