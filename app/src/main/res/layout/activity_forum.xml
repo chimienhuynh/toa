@@ -61,15 +61,8 @@
                     android:layout_margin="5dp"
                     android:scaleType="fitXY"
 
-                    android:src="@drawable/demo1"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="@string/orginising_customer_waits"
-                    android:textSize="16sp"
-                    android:textColor="@android:color/white"
-                    android:textStyle="bold" />
+                    android:src="@drawable/customer_awaits"/>
+
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
@@ -97,15 +90,8 @@
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/demo1"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:text="@string/find_local_club"
-                        android:textSize="16sp"
-                        android:textColor="@android:color/white"
-                        android:textStyle="bold" />
+                        android:src="@drawable/findlocal"/>
+
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
@@ -127,16 +113,8 @@
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/demo2"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:text="@string/join_online_community"
-                        android:gravity="center"
-                        android:textColor="@android:color/white"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+                        android:src="@drawable/online_community"/>
+
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
