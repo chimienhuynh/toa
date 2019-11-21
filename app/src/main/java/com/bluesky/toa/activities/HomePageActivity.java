@@ -90,7 +90,7 @@ public class HomePageActivity extends AppCompatActivity {
 
         homepageBottomBtn2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(HomePageActivity.this, DashBoardActivity.class);
+                Intent intent = new Intent(HomePageActivity.this, CartActivity.class);
                 startActivity(intent);
             }
         });
