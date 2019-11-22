@@ -1,7 +1,16 @@
 <resources>
     <string name="organiztion_name">The Organizing Academy</string>
     <string name="app_name">TheOrgApp</string>
-
+    <string-array name="searvices">
+        <item>Service 1</item>
+        <item>Service 2</item>
+        <item>Service 3</item>
+    </string-array>
+    <string-array name="project_type">
+        <item>Type 1</item>
+        <item>Type 2</item>
+        <item>Type 3</item>
+    </string-array>
     <string name="Organizing">Organizing and Productivity Solution</string>
     <string name="LogInButton">Login</string>
     <string name="Or">Or</string>
@@ -111,5 +120,7 @@
     <string name="expert">Expert</string>
     <string name="project">Project</string>
     <string name="insight">Insight</string>
+    <string name="fan_profile">Fan Profile</string>
+    <string name="guru_profile">Guru Profile</string>
     <string name="marketplace">MarketPlace</string>
 </resources>
