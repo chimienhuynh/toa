@@ -32,11 +32,6 @@
     <string name="already_registered">Already registered?</string>
     <string name="login_again">Login</string>
 
-    <string name="registered_as">Register as: </string>
-    <string name="professional_register">Professional </string>
-    <string name="customer_register">Customer </string>
-    <string name="register_button">Register</string>
-
     <string name="version_info">Version: October, 2019</string>
     <string name="home_page_title">Home</string>
     <string name="group_message">BlueSky - Algonquin College</string>
@@ -112,5 +107,13 @@
     <string name="insight">Insight</string>
     <string name="marketplace">MarketPlace</string>
 
+    <string name="mainprofile_edit">Edit Profile</string>
+    <string name="mainprofile_location">Location</string>
+    <string name="mainprofile_name">Name</string>
+    <string name="registered_as">Register as: </string>
+    <string name="professional_register">Professional </string>
+    <string name="customer_register">Customer </string>
+    <string name="register_button">Register</string>
+    <string name="save_button">Save</string>
 
 </resources>
