@@ -155,7 +155,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="#5F0F37"
-            android:drawableBottom="@drawable/ic_action_btm_nav3"
+            android:drawableBottom="@drawable/ic_action_btn_nav3_lw"
             android:textAllCaps="false"
             android:textSize="12sp" />
 

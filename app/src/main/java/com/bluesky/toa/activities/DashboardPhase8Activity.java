@@ -16,18 +16,9 @@ public class DashboardPhase8Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard_phase8);
 
-        Button projectDasboardBtn1 = findViewById(R.id.imageButton8_pdb_jj);
-
         Button projectDasboardBtnEPF = findViewById(R.id.imageButton_edit_profile_pdb_jj);
         Button projectDasboardBtnHP = findViewById(R.id.imageButton_home_page_pdb_jj);
         Button projectDasboardBtnVPP = findViewById(R.id.imageButton_view_past_project_pdb_jj);
-
-        projectDasboardBtn1.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(DashboardPhase8Activity.this, DashBoardActivity.class);
-                startActivity(intent);
-            }
-        });
 
         projectDasboardBtnEPF.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){

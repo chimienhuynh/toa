@@ -12,22 +12,34 @@
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
-        android:text="@string/project_dashboard_phase_title"
+        android:text="@string/project_dashboard_phase4_title"
         android:textAlignment="center"
         android:textColor="#B4950D"
         android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/imageButton4_pdb_jj"
+    <TextView
+        android:id="@+id/dash_board_p4_project_estimation_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:drawableTop="@drawable/pdb_b_button_2_2"
-        android:text="@string/back_to_dashboard"
-        android:layout_centerInParent="true"
-        android:textAllCaps="false"
-        android:textColor="#B4950D"
-        android:textSize="12sp" />
+        android:layout_below="@+id/dash_board_p_title_jj"
+        android:textSize="18sp"
+        android:text="@string/dash_board_p4_project_estimation_title" />
+    <TextView
+        android:id="@+id/dash_board_p4_project_type_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dash_board_p4_project_estimation_title"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="@string/dash_board_p4_project_type_title" />
+    <Spinner
+        android:id="@+id/dash_board_p4_project_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dash_board_p4_project_estimation_title"
+        android:layout_alignParentEnd="true"
+        android:entries="@array/p4_project_type"
+        android:prompt="@string/p4_project_type_prompt" />
 
     <Button
         android:id="@+id/imageButton_edit_profile_pdb_jj"

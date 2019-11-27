@@ -12,22 +12,98 @@
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
-        android:text="@string/project_dashboard_phase_title"
+        android:text="@string/project_dashboard_phase1_title"
         android:textAlignment="center"
         android:textColor="#B4950D"
         android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/imageButton1_pdb_jj"
+    <TextView
+        android:id="@+id/dash_board_p1_project_name_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:drawableTop="@drawable/pdb_b_button_1_1"
-        android:text="@string/back_to_dashboard"
-        android:layout_centerInParent="true"
+        android:layout_below="@+id/dash_board_p_title_jj"
+        android:layout_alignParentLeft="true"
+        android:textSize="18sp"
+        android:text="@string/dash_board_p1_project_name_title" />
+
+    <TextView
+        android:id="@+id/dash_board_p1_project_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dash_board_p_title_jj"
+        android:layout_toEndOf="@+id/dash_board_p1_project_name_title"
+        android:textSize="18sp"
+        android:text="@string/dash_board_p1_project_name" />
+
+    <TextView
+        android:id="@+id/dash_board_p1_description_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dash_board_p1_project_name"
+        android:layout_alignParentLeft="true"
+        android:textSize="18sp"
+        android:text="@string/dash_board_p1_descriptiion_title" />
+
+    <TextView
+        android:id="@+id/dash_board_p1_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dash_board_p1_description_title"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="@string/dash_board_p1_descriptiion" />
+
+    <TextView
+        android:id="@+id/dash_board_p1_client_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dash_board_p1_description"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="@string/dash_board_p1_client_title" />
+    <Button
+        android:id="@+id/dash_board_p1_button_add_invite_client_jj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dash_board_p1_description"
+        android:layout_alignParentEnd="true"
         android:textAllCaps="false"
-        android:textColor="#B4950D"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        android:text="@string/dash_board_p1_add_client_button" />
+
+    <TextView
+        android:id="@+id/dash_board_p1_team_member_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dash_board_p1_button_add_invite_client_jj"
+        android:textSize="18sp"
+        android:text="@string/dash_board_p1_team_member_title" />
+    <Button
+        android:id="@+id/dash_board_p1_button_add_team_member_jj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dash_board_p1_button_add_invite_client_jj"
+        android:layout_alignParentEnd="true"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:text="@string/dash_board_p1_add_team_member_button" />
+
+    <TextView
+        android:id="@+id/dash_board_p1_note_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dash_board_p1_button_add_team_member_jj"
+        android:textSize="18sp"
+        android:text="@string/dash_board_p1_note_title" />
+    <Button
+        android:id="@+id/dash_board_p1_button_add_note_jj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dash_board_p1_button_add_team_member_jj"
+        android:layout_alignParentEnd="true"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:text="@string/dash_board_p1_add_note_button" />
 
     <Button
         android:id="@+id/imageButton_edit_profile_pdb_jj"

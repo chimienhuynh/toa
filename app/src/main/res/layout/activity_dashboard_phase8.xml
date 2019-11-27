@@ -12,22 +12,27 @@
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
-        android:text="@string/project_dashboard_phase_title"
+        android:text="@string/project_dashboard_phase8_title"
         android:textAlignment="center"
         android:textColor="#B4950D"
         android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/imageButton8_pdb_jj"
+    <TextView
+        android:id="@+id/dash_board_p8_review_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:drawableTop="@drawable/pdb_b_button_4_2"
-        android:text="@string/back_to_dashboard"
-        android:layout_centerInParent="true"
-        android:textAllCaps="false"
-        android:textColor="#B4950D"
-        android:textSize="12sp" />
+        android:layout_below="@+id/dash_board_p_title_jj"
+        android:layout_alignParentLeft="true"
+        android:textSize="18sp"
+        android:text="@string/dash_board_p8_review_title" />
+    <TextView
+        android:id="@+id/dash_board_p8_feedback_survey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dash_board_p8_review_title"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="@string/dash_board_p8_feedback_survey" />
 
     <Button
         android:id="@+id/imageButton_edit_profile_pdb_jj"

@@ -82,7 +82,67 @@
     <string name="contacts">Contacts</string>
 
     <string name="project_dashboard_title">Project Dashboard</string>
-    <string name="project_dashboard_phase_title">Project Dashboard \nPhase</string>
+
+    <string name="project_dashboard_phase1_title">Project Dashboard \nPhase 1: Project Onboarding</string>
+    <string name="dash_board_p1_project_name_title">Project Name: </string>
+    <string name="dash_board_p1_project_name">The First Project</string>
+    <string name="dash_board_p1_descriptiion_title">Brief Description: </string>
+    <string name="dash_board_p1_descriptiion">It’s time! Get ready to serve your customers</string>
+    <string name="dash_board_p1_client_title">Client: </string>
+    <string name="dash_board_p1_add_client_button">Add / Invite Client</string>
+    <string name="dash_board_p1_team_member_title">Team Member(s): </string>
+    <string name="dash_board_p1_add_team_member_button">Add Team Member</string>
+    <string name="dash_board_p1_note_title">Notes, Links and Files: </string>
+    <string name="dash_board_p1_add_note_button">Add Notes / Links / Files</string>
+
+    <string name="project_dashboard_phase2_title">Project Dashboard \nPhase 2: Project Proposal</string>
+    <string name="dash_board_p2_pre_assessment_title">Pre-Assessment\nProposal: </string>
+    <string name="dash_board_p2_post_assessment_title">Post-Assessment\nProposal: </string>
+    <string name="dash_board_p2_project_contract_a_title">Project Contract A: </string>
+    <string name="dash_board_p2_create_proposal_button">Create Proposal</string>
+    <string name="dash_board_p2_create_contract_button">Create Contract</string>
+    <string name="dash_board_p2_download_template_button">Download Template</string>
+
+    <string name="project_dashboard_phase3_title">Project Dashboard \nPhase 3: Project Assessment</string>
+    <string name="dash_board_p3_assessment_title">Project Assessment: </string>
+    <string name="dash_board_p3_assessment">Understand the customer’s needs, challenges and goals.</string>
+
+    <string name="project_dashboard_phase4_title">Project Dashboard \nPhase 4: Project Estimation</string>
+    <string name="dash_board_p4_project_estimation_title">Project Estimation: </string>
+    <string name="dash_board_p4_project_type_title">Project Type: </string>
+    <string name="p4_project_type_prompt">Choose Project Type</string>
+
+    <string-array name="p4_project_type">
+        <item>Residential Organizing</item>
+        <item>Business Organizing</item>
+        <item>Commercial Organizing</item>
+        <item>Social Organizing</item>
+        <item>Lifestyle Organizing</item>
+        <item>Workplace Consulting</item>
+        <item>Organizing Education</item>
+        <item>Add other</item>
+    </string-array>
+
+    <string name="project_dashboard_phase5_title">Project Dashboard \nPhase 5: Project Approval</string>
+    <string name="dash_board_p5_project_approval_title">Project Approval: </string>
+    <string name="dash_board_p5_send_quote_button">Send Quote</string>
+    <string name="dash_board_p5_send_invoice_button">Send Invoice</string>
+    <string name="dash_board_p5_send_contract_b_button">Send Contract B</string>
+
+    <string name="project_dashboard_phase6_title">Project Dashboard \nPhase 6: Project Planning</string>
+    <string name="dash_board_p6_planning_title">Project Planning: </string>
+    <string name="dash_board_p6_client_actions">Clients Action Steps: </string>
+    <string name="dash_board_p6_company_actions">Company’s Action Steps: </string>
+
+    <string name="project_dashboard_phase7_title">Project Dashboard \nPhase 7: Project Execution</string>
+    <string name="dash_board_p7_execution_title">Project Execution: </string>
+    <string name="dash_board_p7_client_actions">Clients Action Steps: </string>
+    <string name="dash_board_p7_company_actions">Company’s Action Steps: </string>
+
+    <string name="project_dashboard_phase8_title">Project Dashboard \nPhase 8: Project Review</string>
+    <string name="dash_board_p8_review_title">Project Review: </string>
+    <string name="dash_board_p8_feedback_survey">Feedback Survey: </string>
+
     <string name="back_to_dashboard">Back to Project Main Dashboard</string>
     <string name="project_dashboard_past_p_title">Past Projects \nList\n\nNo Projects Done yet.</string>
 
