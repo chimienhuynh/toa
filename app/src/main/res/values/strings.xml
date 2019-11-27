@@ -32,6 +32,7 @@
     <string name="already_registered">Already registered?</string>
     <string name="login_again">Login</string>
 
+
     <string name="version_info">Version: October, 2019</string>
     <string name="home_page_title">Home</string>
     <string name="group_message">BlueSky - Algonquin College</string>
@@ -79,14 +80,33 @@
     <string name="project_dashboard_title">Project Dashboard</string>
     <string name="project_dashboard_phase_title">Project Dashboard \nPhase</string>
     <string name="back_to_dashboard">Back to Project Main Dashboard</string>
-    <string name="project_dashboard_past_p_title">Past Projects \nList\n\nNo Projects Done yet.</string>
+    <string name="project_dashboard_past_p_title">Past Projects \nList\n\nComing Soon.</string>
 
+    <string name="guru_profile">Profile</string>
     <string name="guruprofile_profile">Profile</string>
     <string name="guruprofile_name">Jesmine Onyeukwu</string>
     <string name="guruprofile_guru">Organizing Guru</string>
     <string name="guruprofile_location">Ottawa, Canada</string>
     <string name="guruprofile_logout">LOG OUT</string>
+    <string-array name="searvices">
 
+    <item>Service 1</item>
+
+    <item>Service 2</item>
+
+    <item>Service 3</item>
+    </string-array>
+        <string-array name="project_type">
+
+        <item>Type 1</item>
+
+        <item>Type 2</item>
+
+        <item>Type 3</item>
+
+    </string-array>
+
+    <string name="fan_profile">Profile</string>
     <string name="fanprofile_name">Riley Moss</string>
     <string name="fanprofile_guru">Organizing Fan</string>
     <string name="fanprofile_location">Toronto, Canada</string>

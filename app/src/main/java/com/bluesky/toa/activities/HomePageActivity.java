@@ -1,11 +1,12 @@
 package com.bluesky.toa.activities;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.amazonaws.mobile.client.AWSMobileClient;
+import com.bluesky.toa.activities.ChatActivity;
 import com.bluesky.toa.R;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,7 +36,7 @@ public class HomePageActivity extends AppCompatActivity {
         Button homepageBottomBtn4 = findViewById(R.id.imageButton_btm4_hp_jj);
         Button homepageBottomBtn5 = findViewById(R.id.imageButton_btm5_hp_jj);
 
-        homepageBtn1.setOnClickListener(new View.OnClickListener(){
+        homepageBtn1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 //                Intent intent = new Intent(HomePageActivity.this, ChatActivity.class);
                 Intent intent = new Intent(HomePageActivity.this, ForumActivity.class);
@@ -44,16 +45,16 @@ public class HomePageActivity extends AppCompatActivity {
             }
         });
 
-        homepageBtn2.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        homepageBtn2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
                 Intent intent = new Intent(HomePageActivity.this, DashBoardActivity.class);
                 startActivity(intent);
             }
         });
 
-        homepageBtn3.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, ChatActivity.class);
+        homepageBtn3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(HomePageActivity.this, FeaturesActivity.class);
                 startActivity(intent);
             }
         });
@@ -88,9 +89,9 @@ public class HomePageActivity extends AppCompatActivity {
             }
         });
 
-        homepageBottomBtn2.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, DashBoardActivity.class);
+        homepageBottomBtn2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(HomePageActivity.this, CartActivity.class);
                 startActivity(intent);
             }
         });
@@ -104,17 +105,29 @@ public class HomePageActivity extends AppCompatActivity {
             }
         });
 
-        homepageBottomBtn4.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        homepageBottomBtn4.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
                 Intent intent = new Intent(HomePageActivity.this, ChatActivity.class);
                 startActivity(intent);
             }
         });
 
-        homepageBottomBtn5.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                Intent intent = new Intent(HomePageActivity.this, GuruProfileActivity.class);
-                startActivity(intent);
+        homepageBottomBtn5.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                SharedPreferences preferences = getSharedPreferences(Constants.PREF_NAME, MODE_PRIVATE);
+                String accountype = preferences.getString(Constants.ACCOUNT_TYPE, "1");
+                if (accountype.equals("1")) {
+                    Intent intent = new Intent(HomePageActivity.this, GuruProfileActivity.class);
+                    startActivity(intent);
+                } else if (accountype.equals("2")) {
+                    Intent intent = new Intent(HomePageActivity.this, FanProfileActivity.class);
+                    startActivity(intent);
+                }else {
+                    Intent intent = new Intent(HomePageActivity.this, GuruProfileActivity.class);
+                    startActivity(intent);
+
+                }
             }
         });
     }

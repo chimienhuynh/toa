@@ -69,17 +69,17 @@
                         android:layout_height="match_parent"
                         android:layout_margin="5dp"
                         android:scaleType="fitXY"
-                        android:src="@drawable/demo3" />
+                        android:src="@drawable/project" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:gravity="center"
-                        android:text="@string/prohect_of_week"
-                        android:textColor="@android:color/white"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="@string/prohect_of_week"-->
+<!--                        android:textColor="@android:color/white"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:textStyle="bold" />-->
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
@@ -109,17 +109,9 @@
                             android:layout_height="match_parent"
                             android:layout_margin="5dp"
                             android:scaleType="fitXY"
-                            android:src="@drawable/demo1" />
+                            android:src="@drawable/expert" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerInParent="true"
-                            android:text="@string/expert_of_week"
-                            android:textColor="@android:color/white"
-                            android:textSize="16sp"
 
-                            android:textStyle="bold" />
                     </RelativeLayout>
 
                 </androidx.cardview.widget.CardView>
