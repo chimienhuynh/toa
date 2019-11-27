@@ -35,6 +35,16 @@
                     android:text="@string/guru_profile"
                     android:textColor="@android:color/darker_gray"
                     android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/iv_logout"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="?attr/selectableItemBackground"
+                    android:src="@drawable/ic_arrow" />
             </RelativeLayout>
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>

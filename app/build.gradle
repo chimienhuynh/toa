@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'io.objectbox'
 
 android {
     compileSdkVersion 29
@@ -58,5 +59,9 @@ dependencies {
     implementation('com.amazonaws:aws-android-sdk-cognitoauth:2.9.+@aar') { transitive = true }
     implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
     implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    //..
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+    implementation 'id.zelory:compressor:2.1.0'
 
 }

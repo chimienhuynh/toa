@@ -52,8 +52,10 @@
             android:padding="10dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/edit_circular_image"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:src="@drawable/demo1"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/ring_prim" />
@@ -133,10 +135,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:checked="true"
+                    android:checked="false"
                     android:text="Male" />
 
                 <RadioButton
+                    android:id="@+id/radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -302,7 +305,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"
-                android:text="Upload Picture" />
+                android:text="Upload" />
             <!--            <Button-->
             <!--                android:layout_width="match_parent"-->
             <!--                android:layout_height="45dp"-->
