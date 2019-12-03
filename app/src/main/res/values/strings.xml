@@ -196,4 +196,6 @@
     <string name="register_button">Register</string>
     <string name="save_button">Save</string>
 
+    <string name="buttonspin">Spin</string>
+
 </resources>

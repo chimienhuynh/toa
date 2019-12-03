@@ -71,6 +71,7 @@
         <activity android:name=".activities.GuidelinesActivity" />
         <activity android:name=".activities.ResourceMaintenanceGuideActivity" />
         <activity android:name=".activities.ResourceWorkSheetActivity" />
+        <activity android:name=".activities.LifeHarmonyWheel" />
 
         <service android:name="org.eclipse.paho.android.service.MqttService" />
     </application>
