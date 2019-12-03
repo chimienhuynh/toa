@@ -98,8 +98,9 @@ public class HomePageActivity extends AppCompatActivity {
 
         homepageBottomBtn3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-//                Intent intent = new Intent(HomePageActivity.this, FanProfileActivity.class);
-                Intent intent = new Intent(HomePageActivity.this, MarketPlaceActivity.class);
+                //Intent intent = new Intent(HomePageActivity.this, FanProfileActivity.class);
+                //Intent intent = new Intent(HomePageActivity.this, MarketPlaceActivity.class);
+                Intent intent = new Intent(HomePageActivity.this, LifeHarmonyWheel.class);
 
                 startActivity(intent);
             }
