@@ -62,11 +62,14 @@
             android:padding="10dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/edit_circular_image"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="40dp"
-                android:background="@drawable/ring_prim" />
+                android:background="@drawable/ring_prim"
+                android:padding="5dp"
+                android:src="@drawable/user_p" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -95,6 +98,7 @@
                     android:textColor="@android:color/black" />
 
                 <TextView
+                    android:id="@+id/name_tv"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -120,6 +124,7 @@
                     android:textColor="@android:color/black" />
 
                 <TextView
+                    android:id="@+id/location_tv"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -145,6 +150,7 @@
                     android:textColor="@android:color/black" />
 
                 <TextView
+                    android:id="@+id/gender_tv"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -170,6 +176,7 @@
                     android:textColor="@android:color/black" />
 
                 <TextView
+                    android:id="@+id/bio_tv"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -205,6 +212,7 @@
                     android:textColor="@android:color/black" />
 
                 <TextView
+                    android:id="@+id/company_name_tv"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -230,6 +238,7 @@
                     android:textColor="@android:color/black" />
 
                 <Spinner
+                    android:id="@+id/service_spinner"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
