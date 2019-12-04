@@ -3,6 +3,9 @@ package com.bluesky.toa.activities;
 import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -25,6 +28,7 @@ import com.bluesky.toa.R;
 import com.bluesky.toa.data.utils.CircleTransform;
 import com.bluesky.toa.data.utils.ObjectBox;
 import com.bluesky.toa.ui.chat.models.User;
+import com.google.gson.Gson;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
@@ -38,12 +42,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
 import io.objectbox.Box;
 
 public class ProfileEditGuru extends AppCompatActivity {
     ImageView iv_back;
-    Box<User> userBox;
-    ImageView editcircular_image;
+    CircleImageView editcircular_image;
     EditText mNameEt, mLocationEt, mBioEt, mCompanyNameEt, mDescriptionEt;
     RadioGroup mGenderRg;
     Spinner mServiceSpinner, mTypeSpinner;
@@ -51,14 +55,16 @@ public class ProfileEditGuru extends AppCompatActivity {
     Button mUpdateButton;
     RadioButton mRadioButton;
     byte[] imgArray;
+    SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_edit_guru);
 
+        sharedPreferences = getSharedPreferences(Constants.PREF_NAME, MODE_PRIVATE);
+
         editcircular_image = findViewById(R.id.edit_circular_image);
-        userBox = ObjectBox.get().boxFor(User.class);
         iv_back = findViewById(R.id.iv_back_guruprofileedit);
         mNameEt = findViewById(R.id.name_et);
         mLocationEt = findViewById(R.id.location_et);
@@ -69,6 +75,8 @@ public class ProfileEditGuru extends AppCompatActivity {
         mServiceSpinner = findViewById(R.id.service_spinner);
         mTypeSpinner = findViewById(R.id.project_type_spinner);
         mUpdateButton = findViewById(R.id.update_button);
+
+        updateViews();
 
         editcircular_image.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -147,7 +155,13 @@ public class ProfileEditGuru extends AppCompatActivity {
             String gender = mRadioButton.getText().toString();
 
             User user = new User(name, location, gender, bio, company, servicePosition, typePosition, description, imgArray);
-            userBox.put(user);
+            SharedPreferences.Editor edit = sharedPreferences.edit();
+            String json = new Gson().toJson(user);
+            edit.putString(Constants.GURU_SHARED, json);
+            edit.apply();
+            setResult(RESULT_OK);
+            finish();
+            //userBox.put(user);
         }
     }
 
@@ -257,5 +271,23 @@ public class ProfileEditGuru extends AppCompatActivity {
             byteBuffer.write(buffer, 0, len);
         }
         return byteBuffer.toByteArray();
+    }
+
+    private void updateViews() {
+        User user = new Gson().fromJson(sharedPreferences.getString(Constants.GURU_SHARED, null), User.class);
+        if (user != null) {
+            mNameEt.setText(user.getName());
+            mLocationEt.setText(user.getLocation());
+            mBioEt.setText(user.getBio());
+            mCompanyNameEt.setText(user.getCompany_name());
+//            mGenderTv.setText(user.getGender());
+            mServiceSpinner.setSelection(user.getService());
+            mTypeSpinner.setSelection(user.getProject_type());
+            mDescriptionEt.setText(user.getDescription());
+            if (user.getImage() != null) {
+                Bitmap bitmap = BitmapFactory.decodeByteArray(user.getImage(), 0, user.getImage().length);
+                editcircular_image.setImageBitmap(bitmap);
+            }
+        }
     }
 }

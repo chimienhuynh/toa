@@ -1,13 +1,6 @@
 package com.bluesky.toa.ui.chat.models;
 
-import io.objectbox.annotation.Entity;
-import io.objectbox.annotation.Id;
-
-@Entity
-public class User{
-
-    @Id
-    public long id;
+public class User {
     private String name;
     private String location;
     private String gender;

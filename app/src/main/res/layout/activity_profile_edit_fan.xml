@@ -52,11 +52,14 @@
             android:padding="10dp">
 
             <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/edit_circular_image"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="40dp"
-                android:background="@drawable/ring_prim" />
+                android:background="@drawable/ring_prim"
+                android:padding="5dp"
+                android:src="@drawable/user_p" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -83,19 +86,18 @@
                     android:textColor="@android:color/black" />
 
                 <EditText
+                    android:id="@+id/name_et"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-
-                    />
+                    android:layout_marginTop="10dp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:orientation="vertical"
                 android:paddingStart="20dp"
-                android:layout_marginTop="10dp"
                 android:paddingEnd="20dp">
 
                 <TextView
@@ -106,49 +108,53 @@
                     android:textColor="@android:color/black" />
 
                 <EditText
+                    android:id="@+id/location_et"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    />
+                    android:layout_marginTop="10dp" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:text="Gender :"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="Gender :"
                 android:textColor="@android:color/black" />
+
             <RadioGroup
+                android:id="@+id/gender_rg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="horizontal"
                 android:weightSum="2">
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:checked="true"
                     android:layout_weight="1"
                     android:text="Male" />
 
                 <RadioButton
+                    android:id="@+id/radio_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Female"/>
+                    android:text="Female" />
             </RadioGroup>
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="45dp"
-    android:layout_marginStart="20dp"
-    android:layout_marginEnd="20dp"
-    android:layout_marginTop="20dp"
-    android:text="Save"/>
+
+            <Button
+                android:id="@+id/button_save"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Save" />
         </LinearLayout>
 
 
